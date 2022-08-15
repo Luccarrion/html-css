@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmicas</title>
+</head>
+<body>
+    <h1>Esse é um teste de imagens dinâmicas</h1>
+    <p>Observe como a imagem muda de tamanho de acordo com a disposição da janela</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="imagens/imagem-p.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/imagem-m.png" type="image/png">
+    <img src="imagens/imagem-g.png" alt="Imagem flexível">
+    <p>Caso seu navegador não mostre a imagem, você também pode baixá-la <a href="imagens/imagem-g.png" target="_blank" download="imagem-g.png" type="image/png" >aqui</a></p>
+    </picture>
+    <h1>Inserindo áudios no site</h1>
+    <p>Escute essa obra de arte do <abbr title="Banda de rock metal norte-americana">Metálica</abbr></p>
+    <audio src="midia/master.mp3" controls autoplay></audio>
+<h1>Inserindo vídeos hospedados localmente no meu servidor</h1>
+<p>Esse vídeo está no meu computador</p>
+<video poster="imagens/abelha.jpg" src="video/master-video.mp4" width="600px" controls></video>
+ <h1>Inserindo vídeos hospedados em outros servidores</h1>
+ <p>Esse vídeo está hospedado nos servidores da Google (YouTube)</p>
+ <p>Faça isso usando a parte de incorporar vídeos, dentro da área de compartilhamento do YT</p>
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/S7blkui3nQc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
