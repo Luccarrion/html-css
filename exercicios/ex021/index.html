@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de caixas</title>
+    <style>
+        div.quadrado{
+            display: inline-block;
+            border: 2px solid black;
+            background-color: lightgray;
+            width: 300px;
+            height: 300px;
+            margin: 5px;
+            border-radius: 20px;
+        }
+        div#q1{
+            background-color: cyan;
+        }
+        div#q2{
+            background-image: linear-gradient(to bottom, green, red);
+        }
+        div#q3{
+            background-image: url(imagens/pattern003.png);
+        }
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3_ZlGd67BqjiBs7tFBg2Tvo7pnc9rjnc_lvkY7XuMfUZR-FS5Mi70IhWGuuo--srnWAw&usqp=CAU');
+        }
+    </style>
+</head>
+<body>
+    <div class="quadrado" id="q1"></div>
+    <div class="quadrado" id="q2"></div>
+    <div class="quadrado" id="q3"></div>
+</body>
+</html>
