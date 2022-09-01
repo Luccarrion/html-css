@@ -1,0 +1,101 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Passion+One&family=Sriracha&display=swap');
+
+*{
+    padding: 0px;
+    margin:0px;
+}
+
+:root{
+    --cor1: #35DE50;
+    --cor2: #61F547;
+    --cor3: #3CFA91;
+    --cor4: #89de35;
+    --cor5: #DDFA3C;
+
+    --fonte1: 'Arial, Helvetica, sans-serif';
+    --fonte2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    --fonte3:'Oswald', sans-serif;
+}
+header{
+    background-image: linear-gradient(to bottom, var(--cor1), transparent);
+    height: 100px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.103);
+}
+header > h1{
+    font-size: 2vw;
+    padding-top: 15px;
+    text-align: center;
+    
+}
+header > p{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    font-family: var(--fonte2);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.233);
+}
+body{
+    font-family: var(--fonte1);
+    background-color: var(--cor3);
+    
+}
+section{
+    width: 800px;
+    margin: auto;
+    background-color: white;
+    padding-top: 15px;
+    border-radius: 0px 0px 8px 8px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+
+}
+
+section > h2{
+    padding: 15px;
+    
+}
+section > ol{
+    list-style-position: inside;
+    padding: 10px;
+}
+section > p{
+    padding: 15px;
+}
+section > iframe{
+    margin: auto;
+    display: block;
+    width: 600px;
+}
+section> ol > li{
+    padding: 10px;
+
+}
+section > ol > li > a{
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+}
+section > ol > li > a:hover{
+    text-decoration: underline;
+    color: white;
+    background-color: #35DE50;
+    transition-duration: 0.5s;
+    border-radius: 5px;
+}
+h1{
+    font-family: var(--fonte2);
+    text-align: center;
+    font-size: 1.5em;
+    color: var(--cor5);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+   
+}
+h1#principal{
+    font-size: 1.6em;
+    font-family: var(--fonte3);
+    padding: 10px; 
+    color: white;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.26);
+}
