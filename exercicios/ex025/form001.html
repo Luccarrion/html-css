@@ -8,10 +8,18 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-    <form action="">
-        <p>Nome: <input type="text" name="nome" id="nome"></p>
-        <p>Sobrenome: <input type="text" name="sobrenome" id="sobrenome"></p>
+    <form action="formulario.php" autocomplete="off">
+        <p><label for="inome">Nome:</label> <input type="text" name="nome" id="inome"></p>
+        <p><label for="isobrenome">Sobrenome:</label> <input type="text" name="sobrenome" id="isobrenome"></p>
         <p><input type="submit" value="Concluido"></p>
+    </form>
+
+    <h2>Segundo formulário</h2>
+
+    <form action="cadastro.php">
+        <p><label for="isexo">Sexo:</label> <input type="text" name="sexo" id="isexo"> </p>
+        <p><label for="iidade">Idade:</label> <input type="text" name="idade" id="iidade"> </p>
+        <p><input type="submit" value="Preenchido"></p>
     </form>
 </body>
 </html>
