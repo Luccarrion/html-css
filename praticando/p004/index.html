@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redes Sociais</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body, html{
+            height: 100vh;
+            width: 100vw;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url(imagens/fundo-amarelo.webp);
+            background-repeat: no-repeat;
+            background-position: top center;
+            background-size: cover;
+        }
+        main{
+            width: 100vw;
+            height: 100vh;
+            position: relative;
+        }
+        section#telefone{
+            height: 600px;
+            width: 290px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+
+            transform: translate(-50%, -50%);
+            background-image: url(imagens/imagem-telefone.png);
+            background-position: top center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            
+        }
+        iframe#frame{
+            position: absolute;
+            top: 33px;
+            left: 25px;
+
+            width: 236px;
+            height: 537px;
+
+            background-color: #ffffff55;
+            border-radius: 20px;
+        }
+        section#redes-sociais{
+            text-align: right;
+            padding: 10px;
+        }
+        section#redes-sociais > a > img{
+            width: 75px;
+            border-radius: 50%;
+            box-sizing: border-box;
+
+            margin: 7px;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.521);
+        }
+        section#redes-sociais > a > img:hover{
+            border: 1.5px solid #ebda23a6;
+            transform: translate(-5px, -5px);
+
+            transition: transform 0.4s, box-shadow 0.5s;
+
+            box-shadow: 7px 7px 6px rgba(0, 0, 0, 0.541);
+        }
+        
+    </style>
+</head>
+<body>
+    <main>
+        <section id="telefone">
+            <iframe src="paginas-extras/home.html" frameborder="0" id="frame" name="tela">Seu navegador não é compatível com o iframe</iframe>
+        </section>
+        <section id="redes-sociais">
+            <a href="paginas-extras/home.html" target="tela"><img src="imagens/home-logo.png" alt="imagem home"></a> <br>
+            <a href="paginas-extras/youtube.html" target="tela"><img src="imagens/youtube-logo.png" alt="imagem youtube music" style="background-color: rgb(190, 10, 10);"></a> <br>
+            <a href="paginas-extras/instagram.html" target="tela"><img src="imagens/Instagram-logo.png" alt="imagem instagram"></a> <br>
+            <a href="paginas-extras/github.html" target="tela"><img src="imagens/github-logo.png" alt="imagem github"></a> <br>
+            <a href="paginas-extras/facebook.html" target="tela"><img src="imagens/facebook-logo.png" alt="facebook logo"></a>
+        </section>
+    </main>
+</body>
+</html>
