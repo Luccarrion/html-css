@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        *{
+           /* margin: 0px;
+            padding: 0px; */
+            box-sizing: border-box;
+        }
+        :root{
+            --cor1: #15e6f2;
+        }
+        body{
+            background-color: var(--cor1);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Teste de formulário</h1>
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <p>
+            <label for="icor">Cor:</label>
+            <input type="color" name="cor" id="icor">
+        </p>
+
+        <p>
+            <label for="inivel">Nível de satisfação:</label>
+            <input type="range" name="nivel" id="inivel" value="100">
+        </p>
+        </form>
+        <form>
+        <fieldset>
+            <legend>sua Foto</legend>
+            <p>
+                <label for="ifoto">Foto:</label>
+                <input type="file" name="foto" id="ifoto">
+            </p>
+            
+            <p>
+                <label for="iespbas">Basquete</label>
+                <input type="checkbox" name="esp" id="iespbas">
+            </p>
+            <p>
+                <input type="submit" value="enviar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
+
+    </form>
+</body>
+</html>
