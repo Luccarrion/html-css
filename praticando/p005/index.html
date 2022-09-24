@@ -23,41 +23,165 @@
     <main>
         <section>
 
-            <form action="dados/cadastro.php">
+            <form action="dados/cadastro.php" method="post" autocomplete="on">
 
                 <h1>Dados básicos</h1>
 
-                <form action="dados/cadastro.php" method="post" autocomplete="on">
+                
                     <div>
-                        <label for="inome">Nome:</label>
+                        <label for="inome">Nome: </label>
                         <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome" autocomplete="name">
                     </div>
                 
                     <div>
-                        <label for="isobrenome">Sobrenome:</label>
+                        <label for="isobrenome">Sobrenome: </label>
                         <input type="text" name="sobrenome" id="isobrenome" required maxlength="30" placeholder="sobrenome" autocomplete="nickname">
                     </div>
 
                     <div>
-                        <label for="iemail">E-mail:</label>
+                        <label for="iemail">E-mail: </label>
                         <input type="email" name="email" id="iemail" required placeholder="E-mail" autocomplete="email">
                     </div>
 
                     <div>
-                        <label for="inumcel">Número Cel:</label>
+                        <label for="inumcel">Número Cel: </label>
                         <input type="number" name="numcel" id="inumcel" required pattern="^[0-9]{4}-[0-9]{4}$" placeholder="xxxx-xxxx">
                     </div>
 
                     <div>
-                        <input type="reset" value="Limpar Dados Pessoais">
+                        <label for="isexo">Sexo: </label>
+                        <input type="radio" name="sexo" id="isexomas"><label for="isexmas">Masculino</label>
+                        <input type="radio" name="sexo" id="isexfem"><label for="isexfem">Feminino</label>
+                        <input type="radio" name="sexo" id="isexnull"><label for="isexnull">Prefiro não declarar</label>
                     </div>
 
-                </form>
-
+                    <div>
+                        <p>Faça um upload de uma foto sua</p>
+                        <input type="file" name="foto" id="ifoto">
+                    </div>
                 <!-- Fim do form interno -->
+
+                
+
+                    <h1>Gostos</h1>
+
+                    <fieldset>
+
+                        <legend>Comidas</legend>
+
+                        <div>
+                            <label for="icompas">Pastel</label><input type="checkbox" name="compas" id="icompas">
+                            <label for="icomham">Hamburguer</label><input type="checkbox" name="comham" id="icomham">
+                            <label for="icompud">Pudim</label><input type="checkbox" name="compud" id="icompud">
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="icomsal">Salgado</label><input type="checkbox" name="comsal" id="icomsal">
+                            <label for="icomaf">Arroz e feijão</label><input type="checkbox" name="comaf" id="icomaf">
+                            <label for="icombrig">Brigadeiro</label><input type="checkbox" name="combrig" id="icombrig">
+                        </div>
+
+                        <br>
+
+                        <div>
+                            <label for="icomstrog">Strogonof</label><input type="checkbox" name="comstrog" id="icomstrog">
+                            <label for="icomparm">Parmegiana</label><input type="checkbox" name="comparm" id="icomparm">
+                            <label for="icomfile">Filé Mignon</label><input type="checkbox" name="comfile" id="icomfile">
+                        </div>
+
+                        <br>
+                        
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Sua <strong>cor</strong> favorita</legend>
+
+                        <label for="icor">Cor: </label><input type="color" name="cor" id="icor">
+
+                        <br>
+
+                        <p>De 0 a 10, o quão você gosta dessa cor?</p>
+                        <label for="iniv">Nível</label><input type="range" name="niv" id="iniv" max="10" value="0" oninput="ival.innerHTML = Number(iniv.value)">
+                        <output id="ival">0</output>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Músicas</legend>
+                        
+                        <p>Qual o seu <strong>cantor</strong> favorito?</p>
+
+                        <select>
+                            <option value="-- Cantor --" selected>-- Cantor --</option>
+                            <optgroup label="Norte-americano" >
+                                <option value="PM">Post Malone</option>
+                                <option value="TS">Travis Scott</option>
+                                <option value="LG">Lady Gaga</option>
+                                <option value="TW">The Weeknd</option>
+                                <option value="OT">Oliver Tree</option>
+                                <option value="JB">Justin Bieber</option>
+                                <option value="RH">Rihanna</option>
+                            </optgroup>
+                            <optgroup label="Brasileiro">
+                                <option value="LS">Luísa Sonza</option>
+                                <option value="GP">Grabriel Pensador</option>
+                                <option value="DJ">Djavan</option>
+                                <option value="LU">Ludmilla</option>
+                                <option value="AN">Anitta</option>
+                                <option value="PV">Pablo Vittar</option>
+                            </optgroup>
+                        </select>
+
+                        <p>Qual sua <strong>música</strong> favorita</p>
+                        <label for="imus">Música: </label><input type="text" name="mus" id="imus" list="listmus">
+                        <datalist id="listmus">
+                        
+                            <!--Post Malone-->
+                            <option value="Post Malone">Lemon Tree</option>
+                            <option value="Post Malone">Insane</option>
+                            <option value="Post Malone">Wrapper Around Your Finger</option>
+                            <option value="Post Malone">One Rigth Now</option>
+                            <option value="Post Malone">Circles</option>
+                            <option value="Post Malone">Goodbyes</option>
+
+                            <!--Travis Scott-->
+                            <option value="Travis Scoot">Stargazing</option>
+                            <option value="Travis Scoot">5% int</option>
+                            <option value="Travis Scoot">Sicko Mode</option>
+                            <option value="Travis Scoot">Highest in the room</option>
+                            <option value="Travis Scoot">Wake Up</option>
+                        
+                        </datalist>
+                    
+
+                        <p>Porquê você gosta desse(a) cantor(a)?</p>
+                        <textarea name="pqmus" id="ipqmus" cols="30" rows="10">
+
+                        </textarea>
+                    </fieldset>
+
+                
+
+                <h1>Tempo</h1>
+                <div>
+                    <h2>Em qual período você está fazendo esse formulário?</h2>
+                    <label for="imes"></label>Período: <input type="month" name="mes" id="imes">
+                </div>
+
+                <div>
+                    <h2>Em qual dia você está fazendo esse formulário?</h2>
+                    <label for="idata"></label>Dia: <input type="date" name="data" id="idata">
+                </div>
+
+                <div>
+                    <h2>Que horas são aí agora?</h2>
+                    <label for="ihora"></label>Hora: <input type="time" name="hora" id="ihora">
+                </div>
 
                 <div>
                     <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar tudo">
                 </div>
 
             </form>
