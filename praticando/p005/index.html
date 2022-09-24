@@ -4,20 +4,64 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Músicas</title>
+    <title>Formulário</title>
 </head>
 <body>
     <header>
-        <h1>Mundo da música</h1>
-        <p>Página de músicas</p>
+        <h1>
+            Seja bem-vindo!!!
+        </h1>
+        <p>
+            Esse será o site em que você realizará um cadastro
+        </p>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Sobre</a>
+            <a href="#">Projetos</a>
+        </nav>
     </header>
     <main>
         <section>
-            <h1>Escolha sua música:</h1>
+
+            <form action="dados/cadastro.php">
+
+                <h1>Dados básicos</h1>
+
+                <form action="dados/cadastro.php" method="post" autocomplete="on">
+                    <div>
+                        <label for="inome">Nome:</label>
+                        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome" autocomplete="name">
+                    </div>
+                
+                    <div>
+                        <label for="isobrenome">Sobrenome:</label>
+                        <input type="text" name="sobrenome" id="isobrenome" required maxlength="30" placeholder="sobrenome" autocomplete="nickname">
+                    </div>
+
+                    <div>
+                        <label for="iemail">E-mail:</label>
+                        <input type="email" name="email" id="iemail" required placeholder="E-mail" autocomplete="email">
+                    </div>
+
+                    <div>
+                        <label for="inumcel">Número Cel:</label>
+                        <input type="number" name="numcel" id="inumcel" required pattern="^[0-9]{4}-[0-9]{4}$" placeholder="xxxx-xxxx">
+                    </div>
+
+                    <div>
+                        <input type="reset" value="Limpar Dados Pessoais">
+                    </div>
+
+                </form>
+
+                <!-- Fim do form interno -->
+
+                <div>
+                    <input type="submit" value="Enviar">
+                </div>
+
+            </form>
         </section>
     </main>
-    <footer>
-
-    </footer>
 </body>
 </html>
