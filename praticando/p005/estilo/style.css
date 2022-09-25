@@ -97,12 +97,13 @@ article input{
     background-color: #d379b6;;
     padding: 5px;
     margin: 3px;
-    border-radius: 10px;
+    border: 0px solid white;
+    border-radius: 15px;
     color: white;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.514)
 }
 article label{
-    font-size: 1.3vw;
+    font-size: 2.5vh;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.452);
 }
 article label:hover{
@@ -131,6 +132,18 @@ article textarea{
     border-radius: 10px;
     box-shadow:2px 2px 4px rgba(0, 0, 0, 0.548);
 }
+article ::-webkit-file-upload-button{
+    border-radius: 10px;
+    border: 0px solid white;
+    background-color: var(--cor5);
+    color: white;
+    padding: 5px;
+}
+article ::-webkit-file-upload-button:hover{
+    background-color: #dec221;
+    color: var(--cor4);
+}
+
 footer{
     width: 100vw;
     height: 30px;
