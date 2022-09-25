@@ -34,6 +34,11 @@ header{
     width: 100vw;
 
     background-color: var(--cor3);
+    position: relative;
+}
+header nav{
+    position: absolute;
+    top: 75%;
 }
 header > h1{
     font-family: var(--fonte-titulo);
@@ -44,7 +49,7 @@ header > h1{
 }
 header > p{
     text-align: center;
-    font-size: 0.8em;
+    font-size: 1em;
     color: white;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
     padding: 6.5px;
@@ -118,7 +123,12 @@ article p{
 article fieldset{
     border-radius: 10px;
     padding: 10px;
-    border: 2px solid limegreen;
+    border: 2px solid var(--cor5);
+    margin: 5px;
+}
+article .label{
+    padding: 10px;
+    font-weight: bolder;
 }
 article select{
     background-color: #d379b6;
@@ -143,7 +153,6 @@ article ::-webkit-file-upload-button:hover{
     background-color: #dec221;
     color: var(--cor4);
 }
-
 footer{
     width: 100vw;
     height: 30px;
@@ -153,4 +162,12 @@ footer{
 }
 footer p{
     padding-top: 7px;
+}
+footer a{
+    text-decoration: none;
+    color: white;
+}
+footer a:hover{
+ color: rgb(71, 2, 71);
+ transition-duration: 0.7s;
 }
