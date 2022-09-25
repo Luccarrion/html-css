@@ -8,6 +8,7 @@
     margin: 0px;
     padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 :root{
     --cor1: #e6cc39;
@@ -20,6 +21,13 @@
 
     --fonte-titulo: 'Bungee Spice', cursive;
     --fonte-principal: 'Roboto Condensed', sans-serif;
+}
+body{
+    width: 96vw;
+}
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
 }
 header{
     height: 120px;
@@ -55,12 +63,13 @@ header a:hover{
 }
 main{
     background-color: var(--cor2);
-    padding: 10px;
+    padding: 10px 5px 10px 5px;
+    width: 100vw;
 }
 section{
     background-color: white;
-    width: 1100px;
-    padding-top: 5px;
+    width: 80vw;
+    padding: 5px;
     margin: auto;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.425);
     border-radius: 10px;
@@ -74,6 +83,7 @@ article{
     color: white;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.568);
     font-family: var(--fonte-principal);
+    box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.473);
 }
 article h1{
     font-size: 2em;
@@ -104,7 +114,25 @@ article ::placeholder{
 article p{
     padding: 7px;
 }
+article fieldset{
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid limegreen;
+}
+article select{
+    background-color: #d379b6;
+    border-radius: 10px;
+    padding: 5px;
+    box-shadow: inset 1px 1px 2px black;
+}
+article textarea{
+    background-color: #d379b6;
+    color: white;
+    border-radius: 10px;
+    box-shadow:2px 2px 4px rgba(0, 0, 0, 0.548);
+}
 footer{
+    width: 100vw;
     height: 30px;
     background-color: var(--cor5);
     text-align: center;

@@ -61,129 +61,116 @@
 
            
         
-                    <h1>Gostos</h1>
-
-                    <fieldset>
-
-                        <legend>Comidas</legend>
-
-                        <div>
-                            <label for="icompas">Pastel</label><input type="checkbox" name="compas" id="icompas">
-                            <label for="icomham">Hamburguer</label><input type="checkbox" name="comham" id="icomham">
-                            <label for="icompud">Pudim</label><input type="checkbox" name="compud" id="icompud">
-                        </div>
-
-                        <br>
-
-                        <div>
-                            <label for="icomsal">Salgado</label><input type="checkbox" name="comsal" id="icomsal">
-                            <label for="icomaf">Arroz e feijão</label><input type="checkbox" name="comaf" id="icomaf">
-                            <label for="icombrig">Brigadeiro</label><input type="checkbox" name="combrig" id="icombrig">
-                        </div>
-
-                        <br>
-
-                        <div>
-                            <label for="icomstrog">Strogonof</label><input type="checkbox" name="comstrog" id="icomstrog">
-                            <label for="icomparm">Parmegiana</label><input type="checkbox" name="comparm" id="icomparm">
-                            <label for="icomfile">Filé Mignon</label><input type="checkbox" name="comfile" id="icomfile">
-                        </div>
-
-                        <br>
+                    <article>
+                        <h1>Gostos</h1>
+                        <fieldset>
+                            <legend>Comidas</legend>
+                            <div>
+                                <label for="icompas">Pastel</label><input type="checkbox" name="compas" id="icompas">
+                                <label for="icomham">Hamburguer</label><input type="checkbox" name="comham" id="icomham">
+                                <label for="icompud">Pudim</label><input type="checkbox" name="compud" id="icompud">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="icomsal">Salgado</label><input type="checkbox" name="comsal" id="icomsal">
+                                <label for="icomaf">Arroz e feijão</label><input type="checkbox" name="comaf" id="icomaf">
+                                <label for="icombrig">Brigadeiro</label><input type="checkbox" name="combrig" id="icombrig">
+                            </div>
+                            <br>
+                            <div>
+                                <label for="icomstrog">Strogonof</label><input type="checkbox" name="comstrog" id="icomstrog">
+                                <label for="icomparm">Parmegiana</label><input type="checkbox" name="comparm" id="icomparm">
+                                <label for="icomfile">Filé Mignon</label><input type="checkbox" name="comfile" id="icomfile">
+                            </div>
+                            <br>
                         
-                    </fieldset>
+                        </fieldset>
+                        <fieldset>
+                            <legend>Sua <strong>cor</strong> favorita</legend>
+                            <label for="icor">Cor: </label><input type="color" name="cor" id="icor">
+                            <br>
+                            <p>De 0 a 10, o quão você gosta dessa cor?</p>
+                            <label for="iniv">Nível: </label><input type="range" name="niv" id="iniv" max="10" value="0" oninput="ival.innerHTML = Number(iniv.value)">
+                            <output id="ival">0</output>
+                        </fieldset>
+                    </article>
 
-                    <fieldset>
-                        <legend>Sua <strong>cor</strong> favorita</legend>
-
-                        <label for="icor">Cor: </label><input type="color" name="cor" id="icor">
-
-                        <br>
-
-                        <p>De 0 a 10, o quão você gosta dessa cor?</p>
-                        <label for="iniv">Nível</label><input type="range" name="niv" id="iniv" max="10" value="0" oninput="ival.innerHTML = Number(iniv.value)">
-                        <output id="ival">0</output>
-                    </fieldset>
-
-                    <fieldset>
-                        <legend>Músicas</legend>
+                    <article>
+                        <fieldset>
+                            <legend>Músicas</legend>
                         
-                        <p>Qual o seu <strong>cantor</strong> favorito?</p>
-
-                        <select>
-                            <option value="-- Cantor --" selected>-- Cantor --</option>
-                            <optgroup label="Norte-americano" >
-                                <option value="PM">Post Malone</option>
-                                <option value="TS">Travis Scott</option>
-                                <option value="LG">Lady Gaga</option>
-                                <option value="TW">The Weeknd</option>
-                                <option value="OT">Oliver Tree</option>
-                                <option value="JB">Justin Bieber</option>
-                                <option value="RH">Rihanna</option>
-                            </optgroup>
-                            <optgroup label="Brasileiro">
-                                <option value="LS">Luísa Sonza</option>
-                                <option value="GP">Grabriel Pensador</option>
-                                <option value="DJ">Djavan</option>
-                                <option value="LU">Ludmilla</option>
-                                <option value="AN">Anitta</option>
-                                <option value="PV">Pablo Vittar</option>
-                            </optgroup>
-                        </select>
-
-                        <p>Qual sua <strong>música</strong> favorita</p>
-                        <label for="imus">Música: </label><input type="text" name="mus" id="imus" list="listmus">
-                        <datalist id="listmus">
+                            <p>Qual o seu <strong>cantor</strong> favorito?</p>
+                            <select>
+                                <option value="-- Cantor --" selected>-- Cantor --</option>
+                                <optgroup label="Norte-americano" >
+                                    <option value="PM">Post Malone</option>
+                                    <option value="TS">Travis Scott</option>
+                                    <option value="LG">Lady Gaga</option>
+                                    <option value="TW">The Weeknd</option>
+                                    <option value="OT">Oliver Tree</option>
+                                    <option value="JB">Justin Bieber</option>
+                                    <option value="RH">Rihanna</option>
+                                </optgroup>
+                                <optgroup label="Brasileiro">
+                                    <option value="LS">Luísa Sonza</option>
+                                    <option value="GP">Grabriel Pensador</option>
+                                    <option value="DJ">Djavan</option>
+                                    <option value="LU">Ludmilla</option>
+                                    <option value="AN">Anitta</option>
+                                    <option value="PV">Pablo Vittar</option>
+                                </optgroup>
+                            </select>
+                            <p>Qual sua <strong>música</strong> favorita</p>
+                            <label for="imus">Música: </label><input type="text" name="mus" id="imus" list="listmus">
+                            <datalist id="listmus">
                         
-                            <!--Post Malone-->
-                            <option value="Lemon Tree">Lemon Tree</option>
-                            <option value="Insane">Insane</option>
-                            <option value="Wrapper Around Your Finger">Wrapper Around Your Finger</option>
-                            <option value="One Rigth Now">One Rigth Now</option>
-                            <option value="Circles">Circles</option>
-                            <option value="Goodbyes">Goodbyes</option>
-
-                            <!--Travis Scott-->
-                            <option value="Stargazing">Stargazing</option>
-                            <option value="5% int">5% int</option>
-                            <option value="Sicko Mode">Sicko Mode</option>
-                            <option value="Highest in the room">Highest in the room</option>
-                            <option value="Wake Up">Wake Up</option>
+                                <!--Post Malone-->
+                                <option value="Lemon Tree">Lemon Tree</option>
+                                <option value="Insane">Insane</option>
+                                <option value="Wrapper Around Your Finger">Wrapper Around Your Finger</option>
+                                <option value="One Rigth Now">One Rigth Now</option>
+                                <option value="Circles">Circles</option>
+                                <option value="Goodbyes">Goodbyes</option>
+                                <!--Travis Scott-->
+                                <option value="Stargazing">Stargazing</option>
+                                <option value="5% int">5% int</option>
+                                <option value="Sicko Mode">Sicko Mode</option>
+                                <option value="Highest in the room">Highest in the room</option>
+                                <option value="Wake Up">Wake Up</option>
                         
-                        </datalist>
+                            </datalist>
+                        
+                            <p>Porquê você gosta desse(a) cantor(a)?</p>
+                            <textarea name="pqmus" id="ipqmus" cols="30" rows="10">
                     
-
-                        <p>Porquê você gosta desse(a) cantor(a)?</p>
-                        <textarea name="pqmus" id="ipqmus" cols="30" rows="10">
 
                         </textarea>
                     </fieldset>
-
+                </article>
          
           
 
-                <h1>Tempo</h1>
-                <div>
-                    <h2>Em qual período você está fazendo esse formulário?</h2>
-                    <label for="imes"></label>Período: <input type="month" name="mes" id="imes">
-                </div>
-
-                <div>
-                    <h2>Em qual dia você está fazendo esse formulário?</h2>
-                    <label for="idata"></label>Dia: <input type="date" name="data" id="idata">
-                </div>
-
-                <div>
-                    <h2>Que horas são aí agora?</h2>
-                    <label for="ihora"></label>Hora: <input type="time" name="hora" id="ihora">
-                </div>
-
-                <div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Limpar tudo">
-                </div>
-
-            </form>
+                <article>
+                    <h1>Tempo</h1>
+                    <div>
+                        <h2>Em qual período você está fazendo esse formulário?</h2>
+                        <label for="imes">Período:</label> <input type="month" name="mes" id="imes">
+                    </div>
+                    <div>
+                        <h2>Em qual dia você está fazendo esse formulário?</h2>
+                        <label for="idata">Dia:</label> <input type="date" name="data" id="idata">
+                    </div>
+                    <div>
+                        <h2>Que horas são aí agora?</h2>
+                        <label for="ihora">Hora:</label> <input type="time" name="hora" id="ihora">
+                    </div>
+                    <div>
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Limpar tudo">
+                    </div>
+                    
+                                </form>
+                </article>
         </section> 
 
     </main>
