@@ -104,3 +104,12 @@ article ::placeholder{
 article p{
     padding: 7px;
 }
+footer{
+    height: 30px;
+    background-color: var(--cor5);
+    text-align: center;
+    color: white;
+}
+footer p{
+    padding-top: 7px;
+}
