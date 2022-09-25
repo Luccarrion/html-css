@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
+    <link rel="stylesheet" href="estilo/style.css">
 </head>
 <body>
     <header>
@@ -25,44 +26,41 @@
 
             <form action="dados/cadastro.php" method="post" autocomplete="on">
 
-                <h1>Dados básicos</h1>
-
-                
-                    <div>
-                        <label for="inome">Nome: </label>
-                        <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome" autocomplete="name">
-                    </div>
-                
-                    <div>
-                        <label for="isobrenome">Sobrenome: </label>
-                        <input type="text" name="sobrenome" id="isobrenome" required maxlength="30" placeholder="sobrenome" autocomplete="nickname">
-                    </div>
-
-                    <div>
-                        <label for="iemail">E-mail: </label>
-                        <input type="email" name="email" id="iemail" required placeholder="E-mail" autocomplete="email">
-                    </div>
-
-                    <div>
-                        <label for="inumcel">Número Cel: </label>
-                        <input type="number" name="numcel" id="inumcel" required pattern="^[0-9]{4}-[0-9]{4}$" placeholder="xxxx-xxxx">
-                    </div>
-
-                    <div>
-                        <label for="isexo">Sexo: </label>
-                        <input type="radio" name="sexo" id="isexomas"><label for="isexmas">Masculino</label>
-                        <input type="radio" name="sexo" id="isexfem"><label for="isexfem">Feminino</label>
-                        <input type="radio" name="sexo" id="isexnull"><label for="isexnull">Prefiro não declarar</label>
-                    </div>
-
-                    <div>
-                        <p>Faça um upload de uma foto sua</p>
-                        <input type="file" name="foto" id="ifoto">
-                    </div>
+                <article>
+                    <h1>Dados básicos</h1>
+                    
+                        <div>
+                            <label for="inome">Nome: </label>
+                            <input type="text" name="nome" id="inome" required maxlength="30" placeholder="nome" autocomplete="name">
+                        </div>
+                    
+                        <div>
+                            <label for="isobrenome">Sobrenome: </label>
+                            <input type="text" name="sobrenome" id="isobrenome" required maxlength="30" placeholder="sobrenome" autocomplete="nickname">
+                        </div>
+                        <div>
+                            <label for="iemail">E-mail: </label>
+                            <input type="email" name="email" id="iemail" required placeholder="E-mail" autocomplete="email">
+                        </div>
+                        <div>
+                            <label for="inumcel">Número Cel: </label>
+                            <input type="number" name="numcel" id="inumcel" required pattern="^[0-9]{4}-[0-9]{4}$" placeholder="xxxx-xxxx">
+                        </div>
+                        <div>
+                            <label for="isexo">Sexo: </label>
+                            <input type="radio" name="sexo" id="isexomas"><label for="isexmas">Masculino</label>
+                            <input type="radio" name="sexo" id="isexfem"><label for="isexfem">Feminino</label>
+                            <input type="radio" name="sexo" id="isexnull"><label for="isexnull">Prefiro não declarar</label>
+                        </div>
+                        <div>
+                            <p>Faça um upload de uma foto sua</p>
+                            <input type="file" name="foto" id="ifoto">
+                        </div>
+                </article>
                 <!-- Fim do form interno -->
 
-                
-
+           
+        
                     <h1>Gostos</h1>
 
                     <fieldset>
@@ -161,7 +159,8 @@
                         </textarea>
                     </fieldset>
 
-                
+         
+          
 
                 <h1>Tempo</h1>
                 <div>
@@ -185,7 +184,8 @@
                 </div>
 
             </form>
-        </section>
+        </section> 
+
     </main>
     <footer>
         <p>Site feito por <strong>Lucca Carrion</strong></p>
