@@ -64,14 +64,14 @@ img.seta{
 article.bloco1{
     position: absolute;
     left: 15vw;
-    top: 100px;
+    top: 10vh;
     padding: 30px;
 
     border-radius: 10px;
     border: 1px solid purple;
 }
 article.bloco1 h1{
-    font-size: 5vw;
+    font-size: 4.3vw;
     font-weight: bolder;
     text-decoration: underline;
     color: purple;
