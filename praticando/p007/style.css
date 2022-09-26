@@ -33,6 +33,7 @@ div.menu{
     left: 0%;
 
     background-color: var(--cor5); 
+    display: block;
 }
 div.menu img{
     width: 85px;
@@ -45,10 +46,11 @@ div.menu img.icone:hover{
     border: 1px solid var(--cor6);
     transition-duration: 0.3s;
 }
-div.menu img.seta{
+img.seta{
     position: absolute;
     top: 50vh;
-    left: 95%;
+    left: 12%;
+    
     background-color: var(--cor5);
     background-image: url(imagens/seta-icone-feito.png);
     border-radius: 50%;
