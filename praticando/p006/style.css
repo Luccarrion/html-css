@@ -1,5 +1,7 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
 *{
     padding: 0px;
     margin: 0px;
@@ -19,6 +21,7 @@ div.bloco1 h1{
     font-weight: bolder;
     text-decoration: underline;
     color: purple;
+    font-family: 'Anton', sans-serif;;
 }
 div.bloco1{
     position: absolute;
