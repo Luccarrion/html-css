@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: rgb(53, 0, 53);
+
+    --cor2: #D540D5;
+    --cor3: #CC00CC;
+    --cor4: #990099;
+    --cor5: #4D004D;
+    --cor6: #0c040c;
+}
+body,html{
+    width: 100vw;
+}
+body{
+    background-color: var(--cor6);
+    color: white;
+    position: relative;
+}
+div.menu{
+    height: 100vh;
+    width: 120px;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+
+    background-color: var(--cor5); 
+}
+div.menu img{
+    width: 85px;
+    margin: 1.8vw 0px 1.8vw 1.5vw;
+    padding: 20px;
+    border-color: transparent;
+}
+div.menu img.icone:hover{
+    border-radius: 15%;
+    border: 1px solid var(--cor6);
+    transition-duration: 0.3s;
+}
+div.menu img.seta{
+    position: absolute;
+    top: 50vh;
+    left: 95%;
+    background-color: var(--cor5);
+    background-image: url(imagens/seta-icone-feito.png);
+    border-radius: 50%;
+
+    width: 30px;
+}
+article.bloco1{
+    position: absolute;
+    left: 25%;
+    top: 100px;
+    padding: 30px;
+
+    border-radius: 10px;
+    border: 1px solid purple;
+}
+article.bloco1 h1{
+    font-size: 7vh;
+    font-weight: bolder;
+    text-decoration: underline;
+    color: purple;
+    font-family: 'Anton', sans-serif;
+    text-shadow:  1px 1px 0px var(--cor1);
+}
+
+article.bloco1 p{
+    text-align: center;
+    padding-top: 20px;
+}
+div.bloco2{
+    position: absolute;
+    top: 150px;
+}
+.login{
+    margin: 18px 10px 10px 10px;
+    padding: 5px;
+    background-color: var(--cor6);
+    border-top: 0px solid black;
+    border-left: 0px solid black;
+    border-right: 0px solid black;
+    border-bottom:   1px  solid purple;
+    color: purple;
+}
+#iuser{
+    margin-bottom: 40px;
+}
+.login:hover::placeholder{
+    display: none;
+}
+.login::placeholder{
+    color: purple;
+}
+.submit{
+    margin-top: 40px;
+    padding: 7px;
+    color: white;
+    border-radius: 4px;
+    background-color: purple;
+    border: 1px solid var(--cor1);
+}
+.submit:hover{
+    background-color: var(--cor3);
+    color: var(--cor6);
+    transition-duration: 0.4s;
+}
+label:hover{
+    color: purple;
+    text-decoration: underline;
+    font-weight: normal;
+}
+p.cadastro{
+    text-align: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    color: purple;
+    transition-duration: 1s;
+    
+}
+hr{
+    border-color: purple;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
