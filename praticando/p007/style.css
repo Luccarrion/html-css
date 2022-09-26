@@ -17,6 +17,10 @@
     --cor5: #4D004D;
     --cor6: #0c040c;
 }
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
 body,html{
     width: 100vw;
 }
@@ -153,5 +157,5 @@ article.video p{
     font-size: bold;
     text-align: center;
     margin-top: 10vh;
-    
+
 }
