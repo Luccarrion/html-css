@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela de login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bloco1">
+        <h1>Seja bem-vindo</h1>
+        <p>Realize login para continuar</p>
+        <div class="bloco2">
+            <form action="cadastro.php" method="post" autocomplete="on">
+                 <div>
+        
+                    <label for="iuser">Username: </label><input type="text" name="user" class="login" id="iuser" placeholder="Usuário">
+                    <br>
+                    <label for="ipass">Senha: </label><input type="password" name="pass" class="login" id="ipass" placeholder="Senha">
+        
+                </div>
+
+                 <div>
+                     <input type="submit" class="submit" value="Enviar">
+
+                     <input type="reset" class="submit" value="Limpar">
+                 </div>
+             </form>
+        </div>
+    </div>
+</body>
+</html>
