@@ -64,6 +64,7 @@ img.seta{
     width: 30px;
 }
 article.bloco1{
+    width: 35vw;
     position: absolute;
     left: 15vw;
     top: 10vh;
@@ -73,7 +74,8 @@ article.bloco1{
     border: 1px solid purple;
 }
 article.bloco1 h1{
-    font-size: 4.3vw;
+    text-align: center;
+    font-size: 3vw;
     font-weight: bolder;
     text-decoration: underline;
     color: purple;
@@ -84,6 +86,24 @@ article.bloco1 h1{
 article.bloco1 p{
     text-align: center;
     padding-top: 20px;
+    font-size: 1.5vw;
+}
+article.bloco1 label{
+    font-size: 1.5vw;
+}
+article.planeta{
+    position: absolute;
+    width: 37.5vw;
+
+    top: 10vh;
+    left: 52.5vw;
+}
+article.planeta img{
+    width: 37.5vw;
+}
+article.planeta img:hover{
+    padding: 3px;
+    background-image: url(imagens/imagem-planeta-roxo.png);
 }
 div.bloco2{
     position: absolute;
@@ -98,6 +118,7 @@ div.bloco2{
     border-right: 0px solid black;
     border-bottom:   1px  solid purple;
     color: purple;
+    width: 13vw;
 }
 #iuser{
     margin-bottom: 40px;
@@ -109,12 +130,14 @@ div.bloco2{
     color: purple;
 }
 .submit{
-    margin-top: 40px;
+    font-size: 1vw;
+    margin: 40px 10% 0px 10%;
     padding: 7px;
     color: white;
     border-radius: 4px;
     background-color: purple;
     border: 1px solid var(--cor1);
+    width: 25%;
 }
 .submit:hover{
     background-color: var(--cor3);
@@ -128,6 +151,7 @@ label:hover{
 }
 p.cadastro{
     text-align: center;
+    font-size: 1vw;
 }
 p.cadastro > a{
     text-decoration: none;
