@@ -51,6 +51,7 @@ div.menu img.icone:hover{
     border: 1px solid var(--cor6);
     transition-duration: 0.3s;
 }
+
 img.seta{
     position: absolute;
     top: 50vh;
@@ -128,13 +129,13 @@ label:hover{
 p.cadastro{
     text-align: center;
 }
-a{
+p.cadastro > a{
     text-decoration: none;
     color: white;
 }
-a:hover{
+p.cadastro > a:hover{
     color: purple;
-    transition-duration: 1s;
+    transition-duration: 0.4s;
     
 }
 hr{
