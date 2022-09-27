@@ -102,11 +102,11 @@ article.planeta img{
     width: 37.5vw;
 }
 article.planeta img:hover{
-    padding: 3px;
+    padding: 3px; 
     background-image: url(imagens/imagem-planeta-roxo.png);
     background-repeat: no-repeat;
     background-size: cover;
-    width: 39vw;
+    width: 37.5vw;
 }
 div.bloco2{
     position: absolute;
