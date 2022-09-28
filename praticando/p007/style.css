@@ -80,6 +80,7 @@ div.honeycomb{
 }
 div.honeycomb h1{
     color: var(--cor4);
+    text-align: center;
     font-size: 9vh;
     font-family: var(--fonte-honey);
     text-shadow: 2px 2px 0px var(--cor5);
