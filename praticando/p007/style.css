@@ -204,9 +204,9 @@ article.video p{
     margin-top: 10vh;
 }
 article.assinatura img{
-    width: 10vh;
+    width: 8vh;
     position: absolute;
     top: 93vh;
-    left: 93vw;
+    left: 90vw;
     transform: translate(-50%, -50%);
 }
