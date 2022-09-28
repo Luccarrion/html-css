@@ -33,12 +33,13 @@ body{
     background-image: url(imagens/fundo-site.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top left;
     background-attachment: fixed;
     color: white;
     position: relative;
 }
 div.menu{
-    height: 100vh;
+    height: 103vh;
     width: 6vw;
     position: absolute;
     top: 0%;
@@ -205,9 +206,9 @@ article.video p{
     margin-top: 10vh;
 }
 article.assinatura img{
-    width: 8vh;
+    width: 10vh;
     position: absolute;
     top: 93vh;
-    left: 90vw;
+    left: 92vw;
     transform: translate(-50%, -50%);
 }
