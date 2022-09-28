@@ -77,7 +77,7 @@ img.seta{
 div.honeycomb{
     position: absolute;
     top: 8vh;
-    left: 20vw;
+    left: 19vw;
     width: 25vw;
     height: 8vh;
     background-color: var(--cor6);
@@ -85,7 +85,7 @@ div.honeycomb{
 div.honeycomb h1{
     color: var(--cor4);
     text-align: center;
-    font-size: 9vh;
+    font-size: 8vh;
     font-family: var(--fonte-honey);
     text-shadow: 2px 2px 0px var(--cor5);
     font-weight: bolder;
