@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div class="honeycomb">
+        <h1>HONEYCOMB</h1>
+    </div>
+    
+    <article class="bloco1">
+        <h1>Seja bem-vindo</h1>
+        <p>Realize <strong style="color: purple;">login</strong> para continuar</p>
+
+        <hr>
+        
+            <form action="cadastro.php" method="post" autocomplete="on"></form>
+                 <div>
+        
+                    <label for="iuser">Username: </label><input type="text" name="user" class="login" id="iuser" placeholder="Usuário" required >
+                    <br>
+                    <label for="ipass">Password: </label><input type="password" name="pass" class="login" id="ipass" placeholder="Senha" required>
+                    <br>
+                    
+        
+                </div>
+
+                 <div>
+                     <input type="submit" class="submit" value="Enviar">
+
+                     <input type="reset" class="submit" value="Limpar">
+                 </div>
+             </form>
+             <p class="cadastro">Ainda não tem login?? Então <a href="#">Cadastre-se</a></p>
+        
+    </form>
+    </article>
+    <article class="planeta">
+        <img src="../imagens/design-site.png" alt="imagem planeta">
+    </article>
+    <article class="assinatura-login">
+        
+    </article>
+</body>
+</html>

@@ -11,9 +11,9 @@
 <body>
     
         <div class="menu" >
-            <abbr title="Log In"><img src="imagens/menu-icone-feito.png" alt="icone-menu" class="icone"></abbr>
+            <abbr title="Log In"><a href="paginas-extra/login.html" target="iframe" rel="next"><img src="imagens/menu-icone-feito.png" alt="icone-menu" class="icone"></a></abbr>
             <br>
-            <abbr title="Social"><img src="imagens/pessoa-icone-feito.png" alt="icone-pessoa" class="icone"></abbr>
+            <abbr title="Social"><a href="paginas-extra/social.html" target="iframe" rel="next"><img src="imagens/pessoa-icone-feito.png" alt="icone-pessoa" class="icone"></a></abbr>
             <br>
             <abbr title="Trabalhos"><img src="imagens/papel-icone-feito.png" alt="icone-papel" class="icone"></abbr>
             <br>
@@ -22,42 +22,8 @@
             <abbr title="Jogos"><img src="imagens/jogo-icone-feito.png" alt="icone-jogo" class="icone"></abbr>
         
         </div>
-    <div class="honeycomb">
-        <h1>HONEYCOMB</h1>
+    <div id="frame">
+        <iframe src="paginas-extra/login.html" frameborder="0" name="iframe">Seu navegador não é compatível com iframe</iframe>
     </div>
-    
-    <article class="bloco1">
-        <h1>Seja bem-vindo</h1>
-        <p>Realize <strong style="color: purple;">login</strong> para continuar</p>
-
-        <hr>
-        
-            <form action="cadastro.php" method="post" autocomplete="on"></form>
-                 <div>
-        
-                    <label for="iuser">Username: </label><input type="text" name="user" class="login" id="iuser" placeholder="Usuário" required >
-                    <br>
-                    <label for="ipass">Password: </label><input type="password" name="pass" class="login" id="ipass" placeholder="Senha" required>
-                    <br>
-                    
-        
-                </div>
-
-                 <div>
-                     <input type="submit" class="submit" value="Enviar">
-
-                     <input type="reset" class="submit" value="Limpar">
-                 </div>
-             </form>
-             <p class="cadastro">Ainda não tem login?? Então <a href="#">Cadastre-se</a></p>
-        
-    </form>
-    </article>
-    <article class="planeta">
-        <img src="imagens/design-site.png" alt="imagem planeta">
-    </article>
-    <article class="assinatura">
-        <img src="imagens/assinatura site.png" alt="assinatura">
-    </article>
 </body>
 </html>

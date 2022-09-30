@@ -209,10 +209,89 @@ article.video p{
     text-align: center;
     margin-top: 10vh;
 }
-article.assinatura img{
+article.assinatura-login{
     width: 10vh;
+    height: 10vh;
     position: absolute;
-    top: 93vh;
+    top: 50vw;
     left: 92vw;
     transform: translate(-50%, -50%);
+    background-image: url(imagens/assinatura\ site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div#frame{
+    height: 103vh;
+    width: 90vw;
+    background-color: white;
+    position: absolute;
+    top: 0px;
+    left: 6vw;
+}
+div#frame iframe{
+    height: 103vh;
+    width: 98vw;
+}
+/* Config página social*/
+section.posts{
+    width: 60vw;
+    height: 100%;
+    background-color: var(--cor6);
+    margin: auto;
+    border: 1px solid var(--cor5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1%;
+    
+}
+div.post{
+    margin: auto;
+    border: 1px solid var(--cor5);
+    border-radius: 2%;
+    width: 50vw;
+    height: 100%;
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    box-shadow: 2px 2px 3px rgba(77, 0, 77, .500);
+    
+}
+div.post img.userfoto{
+    width: 3vw;
+    padding: 0.5vw;
+    border-radius: 50%;
+    border: 1px solid var(--cor5);
+    margin: 0.8vw;
+    display: inline;
+}
+div.post > p{
+    padding-bottom: 1.7vw;
+    margin-left: 1.7vw;
+    font-size: 1vw;
+}
+div.nomeusuario img{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+div.nomeusuario > p{
+    display: inline-block;
+    position: absolute;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    color: var(--cor4);
+}
+div.post img.imagempost{
+    margin: 1vw;
+    width: 48vw;
+    border-radius: 2%;
+    border: 1px solid var(--cor5);
+}
+article.assinatura-social{
+    width: 10vh;
+    height: 10vh;
+    position: absolute;
+    top: 98%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    background-image: url(imagens/assinatura\ site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
