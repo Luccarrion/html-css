@@ -278,6 +278,13 @@ div.nomeusuario > p{
     font-size: 1vw;
     color: var(--cor4);
 }
+div.nomeusuario a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+div.nomeusuario a:hover{
+    color: var(--cor3);
+}
 div.post img.imagempost{
     margin: 1vw;
     width: 48vw;
@@ -294,4 +301,29 @@ article.assinatura-social{
     background-image: url(imagens/assinatura\ site.png);
     background-repeat: no-repeat;
     background-size: cover;
+}
+div.post p.icones img{
+    width: 2vw;
+    margin: .5vw;
+}
+div.post p.icones img:hover{
+    transform: translate(-2px, -2px);
+    transition-duration: 0.3s;
+}
+#icoment{
+    background-color: var(--cor6);
+    border-radius: 5%;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent ;
+    border-right: 0px solid transparent ;
+    border-bottom: 1px solid var(--cor5);
+    height: 4vh;
+    width: 47vw;
+    margin-left: 1.6vw;
+    margin-bottom: 5px;
+    color: white;
+}
+#icoment::placeholder{
+    color: var(--cor4);
+    font-size: 1.3vw;
 }
