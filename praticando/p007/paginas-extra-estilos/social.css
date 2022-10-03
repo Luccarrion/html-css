@@ -1,0 +1,141 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: rgb(53, 0, 53);
+
+    --cor2: #D540D5;
+    --cor3: #CC00CC;
+    --cor4: #990099;
+    --cor5: #4D004D;
+    --cor6: #0c040c;
+
+    --fonte-principal: 'Oswald', sans-serif;
+    --fonte-honey: 'Anton', sans-serif;
+}
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+body,html{
+    
+    width: 100vw;
+    
+}
+body{
+    background-image: url(../imagens/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+}
+main{
+    margin-top: 1vw;
+    margin-bottom: 3vw;
+}
+section.posts{
+    width: 60%;
+    height: 95%;
+    background-color: var(--cor6);
+    border: 1px solid var(--cor5);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 1%;
+    margin: auto;
+}
+div.post{
+    margin: auto;
+    border: 1px solid var(--cor5);
+    border-radius: 2%;
+    width: 84%;
+    height: 90%;
+    margin-top: 1.5vw;
+    margin-bottom: 1.5vw;
+    box-shadow: 2px 2px 3px rgba(77, 0, 77, .500);
+    
+}
+div.post img.userfoto{
+    width: 3vw;
+    padding: 0.5vw;
+    border-radius: 50%;
+    border: 1px solid var(--cor5);
+    margin: 0.8vw;
+    display: inline;
+}
+div.post > p{
+    padding-bottom: 1.7vw;
+    margin-left: 1.7vw;
+    font-size: 1vw;
+}
+div.nomeusuario img{
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.548);
+}
+div.nomeusuario > p{
+    display: inline-block;
+    position: absolute;
+    margin-top: 1.5vw;
+    font-size: 1vw;
+    color: var(--cor4);
+}
+div.nomeusuario a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+div.nomeusuario a:hover{
+    color: var(--cor3);
+}
+div.post img.imagempost{
+    margin: 1vw;
+    width: 48vw;
+    border-radius: 2%;
+    border: 1px solid var(--cor5);
+}
+article.assinatura-social{
+    width: 6vw;
+    height: 6vw;
+    position: absolute;
+    top: 98%;
+    left: 92%;
+    transform: translate(-50%, -50%);
+    background-image: url(../imagens/assinatura\ site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div.post p.icones img{
+    width: 2vw;
+    margin: .5vw;
+}
+div.post p.icones img:hover{
+    transform: translate(-2px, -2px);
+    transition-duration: 0.3s;
+}
+#icoment{
+    background-color: var(--cor6);
+    border-radius: 5%;
+    border-top: 0px solid transparent;
+    border-left: 0px solid transparent ;
+    border-right: 0px solid transparent ;
+    border-bottom: 1px solid var(--cor5);
+    height: 4vh;
+    width: 47vw;
+    margin-left: 1.6vw;
+    margin-bottom: 5px;
+    color: white;
+}
+#icoment::placeholder{
+    color: var(--cor4);
+    font-size: 1.3vw;
+}

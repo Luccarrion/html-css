@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: rgb(53, 0, 53);
+
+    --cor2: #D540D5;
+    --cor3: #CC00CC;
+    --cor4: #990099;
+    --cor5: #4D004D;
+    --cor6: #0c040c;
+
+    --fonte-principal: 'Oswald', sans-serif;
+    --fonte-honey: 'Anton', sans-serif;
+}
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+body,html{
+    
+    width: 100vw;
+    
+}
+body{
+    background-image: url(../imagens/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+}
