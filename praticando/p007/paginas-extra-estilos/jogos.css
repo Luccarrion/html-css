@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: rgb(53, 0, 53);
+
+    --cor2: #D540D5;
+    --cor3: #cc00cc;
+    --cor4: #990099;
+    --cor5: #4D004D;
+    --cor6: #0c040c;
+
+    --fonte-principal: 'Oswald', sans-serif;
+    --fonte-honey: 'Anton', sans-serif;
+    --fonte-lista: 'Noto Sans Mono', monospace;
+}
+     ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+    hr{
+        border-color: var(--cor5);
+        width: 65vw;
+        margin-left: 2.5vw;
+    }
+    body,html{
+        height: 70vw;
+        width: 100%;
+        
+    }
+    body{
+        background-image: url(../imagens/fundo-site.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top left;
+        background-attachment: fixed;
+        color: white;
+        position: relative;}
+main{
+    border: 1px solid var(--cor5);
+    border-radius: 20px;
+    width: 70vw;
+    height: 80vw;
+    position: absolute;
+    left: 15vw;
+    margin: 2vw;
+} 
+main h1{
+    color: var(--cor5);
+    text-shadow: 2px 2px 3px var(--cor6);
+    text-align: center;
+    font-size: 3.5vw;
+    padding: 10px;
+    font-family: var(--fonte-principal);
+}
+aside.img{
+    padding: 3.5vw;
+}
+aside.img#dmc5 p{
+    position: absolute;
+    color: var(--cor3);
+    top: 10vw;
+    left: 10vw;
+    font-size: 1.4vw
+}
+aside.img#fh p{
+    position: absolute;
+    color: var(--cor3);
+    top:10vw;
+    left: 33vw;
+    font-size: 1.4vw
+}
+aside.img#gtav p{
+    position: absolute;
+    color: var(--cor3);
+    top: 10vw;
+    left: 56vw;
+    font-size: 1.4vw
+}
+aside.img img#img1{
+    position: absolute;
+    width: 20vw;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    margin: 1vw;
+    left: 3.5vw;
+    top: 11.6vw;
+}
+aside.img img#img2{
+    position: absolute;
+    width: 20vw;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    margin: 1vw;
+    left: 25vw;
+    top: 11.6vw;
+}
+aside.img img#img3{
+    position: absolute;
+    width: 20vw;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    margin: 1vw;
+    left: 46.5vw;
+    top: 11.6vw;
+}
+aside.img1 img#img4{
+    position: absolute;
+    width: 20vw;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    margin: 1vw;
+    left: 3.5vw;
+    top: 28.6vw;
+}
+aside.img1 img#img5{
+    position: absolute;
+    width: 20vw;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    margin: 1vw;
+    left: 25vw;
+    top: 28.6vw;
+}
+aside.img1 img#img6{
+    position: absolute;
+    width: 20vw;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    margin: 1vw;
+    left: 46.5vw;
+    top: 28.6vw;
+}
+aside.img1#satisfactory p{
+    color: var(--cor3);
+    position: absolute;
+    top: 27vw;
+    left: 10vw;
+    font-size: 1.4vw
+}
+aside.img1#carrion p{
+    color: var(--cor3);
+    position: absolute;
+    top: 27vw;
+    left: 33vw;
+    font-size: 1.4vw
+}
+aside.img1#lol p{
+    color: var(--cor3);
+    position: absolute;
+    top: 27vw;
+    left: 52vw;
+    font-size: 1.4vw
+}
+aside.img img#img1:hover{
+    border: 5px solid var(--cor4);
+}
+aside.img img#img2:hover{
+    border: 5px solid var(--cor4);
+}
+aside.img img#img3:hover{
+    border: 5px solid var(--cor4);
+}
+aside.img1 img#img4:hover{
+    border: 5px solid var(--cor4);
+}
+aside.img1 img#img5:hover{
+    border: 5px solid var(--cor4);
+}
+aside.img1 img#img6:hover{
+    border: 5px solid var(--cor4);
+}

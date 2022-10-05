@@ -1,0 +1,193 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Oswald:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+:root{
+    --cor1: rgb(53, 0, 53);
+
+    --cor2: #D540D5;
+    --cor3: #cc00cc;
+    --cor4: #990099;
+    --cor5: #4D004D;
+    --cor6: #0c040c;
+
+    --fonte-principal: 'Oswald', sans-serif;
+    --fonte-honey: 'Anton', sans-serif;
+    --fonte-lista: 'Noto Sans Mono', monospace;
+}
+    ::-webkit-scrollbar{
+        width: 0px;
+        height: 0px;
+    }
+body,html{
+    height: 70vw;
+    width: 100%;
+    
+}
+body{
+    background-image: url(../imagens/fundo-site.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top left;
+    background-attachment: fixed;
+    color: white;
+    position: relative;
+}
+
+main{
+    border: 1px solid var(--cor5);
+    border-radius: 10px;
+    width: 60vw;
+    position: absolute;
+    left: 17vw;
+    margin: 2vw;
+}
+main h1{
+    color: var(--cor5);
+    font-weight: bolder;
+    font-size: 3vw;
+    text-shadow: 2px 2px 3px var(--cor1);
+    text-align: center;
+    padding: 10px;
+    
+}
+main hr{
+    border-color: var(--cor5);
+    width: 55vw;
+    position: absolute;
+    left: 35px;
+}
+article h2{
+    font-size: 2vw;
+    padding: 1vw;
+    margin: 1vw;
+    color: var(--cor6);
+    background-image: linear-gradient(to right, var(--cor4) 5%, transparent 50%);
+    border-radius: 20px;
+}
+ol audio{
+    margin: 1vw;
+    border: 2px solid var(--cor5);
+    border-radius: 25px;
+}
+ol li{
+    font-size: 2vw;
+    text-shadow: 2px 2px 3px var(--cor6);
+}
+audio{
+    width: 35vw;
+}
+li.m1:hover audio.musica1{
+    display: block;
+}
+li.m1:hover{
+    color: var(--cor3);
+}
+audio.musica1{
+    display: none;
+}
+li.m2:hover audio.musica2{
+    display: block;
+}
+li.m2:hover{
+    color: var(--cor3);
+}
+audio.musica2{
+    display: none;
+}
+li.m3:hover audio.musica3{
+    display: block;
+}
+li.m3:hover{
+    color: var(--cor3)
+}
+audio.musica3{
+    display: none;
+}
+li.m4:hover audio.musica4{
+    display: block;
+}
+li.m4:hover{
+    color: var(--cor3)
+}
+audio.musica4{
+    display: none;
+}
+li.m5:hover audio.musica5{
+    display: block;
+}
+li.m5:hover{
+    color: var(--cor3)
+}
+audio.musica5{
+    display: none;
+}
+li.m6:hover audio.musica6{
+    display: block;
+}
+li.m6:hover{
+    color: var(--cor3)
+}
+audio.musica6{
+    display: none;
+}
+li.m7:hover audio.musica7{
+    display: block;
+}
+li.m7:hover{
+    color: var(--cor3)
+}
+audio.musica7{
+    display: none;
+}
+li.m8:hover audio.musica8{
+    display: block;
+}
+li.m8:hover{
+    color: var(--cor3)
+}
+audio.musica8{
+    display: none;
+}
+li.m9:hover audio.musica9{
+    display: block;
+}
+li.m9:hover{
+    color: var(--cor3)
+}
+audio.musica9{
+    display: none;
+}
+li.m10:hover audio.musica10{
+    display: block;
+}
+li.m10:hover{
+    color: var(--cor3)
+}
+audio.musica10{
+    display: none;
+}
+article ol{
+    list-style: inside;
+}
+article ol li{
+    padding: 1vw;
+}
+aside img{
+    position: absolute;
+    left: 38vw;
+    top: 25vw;
+    width: 20vw;
+}
