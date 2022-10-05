@@ -222,7 +222,7 @@ article.assinatura-login{
     background-size: cover;
 }
 div#frame{
-    height: 103vh;
+    height: 112vh;
     width: 90vw;
     background-color: white;
     position: absolute;
@@ -230,6 +230,6 @@ div#frame{
     left: 6vw;
 }
 div#frame iframe{
-    height: 103vh;
+    height: 112vh;
     width: 98vw;
 }

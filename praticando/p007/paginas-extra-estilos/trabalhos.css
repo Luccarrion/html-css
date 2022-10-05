@@ -32,8 +32,8 @@
         height: 0px;
     }
 body,html{
-    height: 100%;
-    width: 100vw;
+    height: 70vw;
+    width: 100%;
     
 }
 body{
@@ -48,26 +48,27 @@ body{
 main{
     height: auto;
     width: 100%;
+    margin: 1vw;
 }
 main h1{
     font-family: var(--fonte-honey);
     text-align: center;
-    margin: 1vw;
+    
     font-size: 2vw;
     color: var(--cor4);
     text-shadow: 2px 2px 0px var(--cor5);
 }
 section.areadetrabalho{
     position: absolute;
-    height: auto;
-    width: 60%;
+    height: fit-content;
+    width: 43vw;
     left: 20vw;
     background-color: var(--cor6);
     border: 1px solid var(--cor5);
     border-radius: 1%;
-    margin-top: 1.5vw;
-    margin-bottom: 3vw;
-    padding: 2vw .5vw;
+    margin-bottom: 30px;
+    margin-top: 18px;
+    padding: 1vw 1vw;
 }
 div.lista{
     list-style: inside;
@@ -75,16 +76,66 @@ div.lista{
     border: 1px solid var(--cor5);
     border-radius: 1%;
     height: auto;
-    padding: 10px;
+    padding: 5px;
+    font-size: 1vw;
 }
 div.lista h2{
     font-family: var(--fonte-principal);
     color: var(--cor4);
     text-shadow: 2px 2px 0px var(--cor5);
     margin: 0.5vw;
+    font-size: 2vw;
+}
+div.lista ul.desafios{
+    columns: auto;
 }
 div.lista li{
     color: var(--cor4);
     padding: .1vw;
     font-family: var(--fonte-lista);
+    font-size: 1.4vw;
+}
+div.lista li > a{
+    text-decoration: none;
+    color: var(--cor4);
+}
+div.lista li > a:hover{
+    text-decoration: dotted;
+    color: var(--cor2);
+}
+div#praticando iframe{
+    position: absolute;
+    left: 16vw;
+    top: 8vw;
+    margin: 1.5vw;
+    border: 1px solid var(--cor4);
+    border-radius: 2%; 
+    width: 20vw;
+    height: 13vw;
+    background-color: white;
+}
+div#desafios iframe{
+    margin: 1.5vw;
+    background-color: white;
+    width: 20vw;
+    height: 13vw;
+    position: absolute;
+    top: 35vw;
+    left: 16vw;
+    border: 1px solid var(--cor4);
+    border-radius: 2%; 
+}
+aside img.fotocolmeia{
+    width: 40vw;
+    height: 40vw;
+    position: absolute;
+    left: 60vw;
+    top: 10vw;
+}
+aside img.assinatura{
+    position: absolute;
+    top: 80vw;
+    height: 5vw;
+    width: 5vw;
+    left: 91vw;
 }
