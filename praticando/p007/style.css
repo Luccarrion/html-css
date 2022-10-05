@@ -29,7 +29,7 @@
         height: 0px;
     }
 body,html{
-    height: 110%;
+    height: 100%;
     width: 100vw;
     min-width: 1000px;
 }
@@ -43,7 +43,7 @@ body{
     position: relative;
 }
 div.menu{
-    height: 115%;
+    height: 103%;
     width: 6vw;
     position: absolute;
     top: 0%;
@@ -64,167 +64,8 @@ div.menu img.icone:hover{
     border: 1px solid var(--cor6);
     transition-duration: 0.3s;
 }
-
-img.seta{
-    position: absolute;
-    top: 50vh;
-    left: 12%;
-
-    background-color: var(--cor5);
-    background-image: url(imagens/seta-icone-feito.png);
-    border-radius: 50%;
-
-    width: 30px;
-}
-div.honeycomb{
-    position: absolute;
-    top: 8vh;
-    left: 19vw;
-    width: 25vw;
-    height: 8vh;
-    background-color: var(--cor6);
-}
-div.honeycomb h1{
-    color: var(--cor4);
-    text-align: center;
-    font-size: 8vh;
-    font-family: var(--fonte-honey);
-    text-shadow: 2px 2px 0px var(--cor5);
-    font-weight: bolder;
-}
-article.bloco1{
-    height: 95vh;
-    width: 35vw;
-    position: absolute;
-    left: 15vw;
-    top: 25vh;
-    padding: 30px;
-
-    border-radius: 10px;
-    border: 1px solid purple;
-}
-article.bloco1 h1{
-    text-align: center;
-    font-size: 3vw;
-    font-weight: bolder;
-    color: purple;
-    font-family: 'Anton', sans-serif;
-    text-shadow:  1px 1px 0px var(--cor1);
-}
-
-article.bloco1 p{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 1.5vw;
-}
-article.bloco1 label{
-    font-size: 1.5vw;
-    margin-left: 2vw;
-}
-article.planeta{
-    position: absolute;
-    width: 37.5vw;
-    height: -30vh;
-
-    top: 30vh;
-    left: 52.5vw;
-}
-article.planeta img{
-    width: 37.5vw;
-}
-
-div.bloco2{
-    position: absolute;
-    top: 150px;
-}
-.login{
-    font-size: 1vw;
-    margin: 5vw 2vw 5vw 4vw;
-    background-color: transparent;
-    border-top: 0px solid black;
-    border-left: 0px solid black;
-    border-right: 0px solid black;
-    border-bottom:   1px  solid purple;
-    color: purple;
-    width: 13vw;
-}
-#iuser{
-    margin-bottom: 40px;
-}
-.login:hover::placeholder{
-    display: none;
-}
-.login::placeholder{
-    color: purple;
-}
-.submit{
-    font-size: 1vw;
-    margin: 40px 10% 0px 10%;
-    padding: 7px;
-    color: white;
-    border-radius: 10px;
-    background-color: purple;
-    border: 1px solid var(--cor1);
-    width: 25%;
-}
-.submit:hover{
-    background-color: var(--cor3);
-    color: var(--cor6);
-    transition-duration: 0.4s;
-}
-label:hover{
-    color: purple;
-    text-decoration: underline;
-    font-weight: normal;
-}
-p.cadastro{
-    text-align: center;
-    font-size: 1vw;
-}
-p.cadastro > a{
-    text-decoration: none;
-    color: white;
-}
-p.cadastro > a:hover{
-    color: purple;
-    transition-duration: 0.4s;
-    
-}
-hr{
-    border-color: purple;
-    margin-top: 20px;
-    margin-bottom: 60px;
-}
-article.video{
-    width: 75vh;
-    height: 65vh;
-    position: absolute;
-    left: 50vw;
-    top: 100px;
-}
-article.video video{
-    width: 40vw;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
-}
-article.video p{
-    font-size: bold;
-    text-align: center;
-    margin-top: 10vh;
-}
-article.assinatura-login{
-    width: 10vh;
-    height: 10vh;
-    position: absolute;
-    top: 95%;
-    left: 92vw;
-    transform: translate(-50%, -50%);
-    background-image: url(imagens/assinatura\ site.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 div#frame{
-    height: 110.9%;
+    height: 100vh;
     width: 90vw;
     background-color: white;
     position: absolute;
