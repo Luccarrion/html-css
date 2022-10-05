@@ -74,8 +74,8 @@ article h2{
     padding: 1vw;
     margin: 1vw;
     color: var(--cor6);
-    background-image: linear-gradient(to right, var(--cor4) 5%, transparent 50%);
-    border-radius: 20px;
+    background-image: linear-gradient(to right, rgba(204, 0, 204, 0.5) 5%, transparent 50%);
+    border-radius: 100px;
 }
 ol audio{
     margin: 1vw;

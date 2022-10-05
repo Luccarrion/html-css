@@ -183,3 +183,9 @@ aside.img1 img#img5:hover{
 aside.img1 img#img6:hover{
     border: 5px solid var(--cor4);
 }
+div.controle img{
+    position: absolute;
+    top: 40vw;
+    width: 40vw;
+    left: 15vw;
+}
