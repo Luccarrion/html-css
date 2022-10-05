@@ -18,6 +18,10 @@
     --fonte2: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     --fonte3:'Oswald', sans-serif;
 }
+::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+}
 header{
     background-image: linear-gradient(to bottom, var(--cor1), transparent);
     height: 100px;

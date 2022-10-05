@@ -94,6 +94,7 @@ div.lista li{
     padding: .1vw;
     font-family: var(--fonte-lista);
     font-size: 1.4vw;
+    margin-left: 1vw;
 }
 div.lista li > a{
     text-decoration: none;
@@ -113,6 +114,7 @@ div#praticando iframe{
     width: 20vw;
     height: 13vw;
     background-color: white;
+    box-shadow: 2px 2px 3px var(--cor5);
 }
 div#desafios iframe{
     margin: 1.5vw;
@@ -124,6 +126,7 @@ div#desafios iframe{
     left: 16vw;
     border: 1px solid var(--cor4);
     border-radius: 2%; 
+    box-shadow: 2px 2px 3px var(--cor5);
 }
 aside img.fotocolmeia{
     width: 40vw;
