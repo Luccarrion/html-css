@@ -29,8 +29,8 @@
         height: 0px;
     }
 body,html{
-    height: 100vh;
-    width: 100vw;
+    height: 95vh;
+    width: 97vw;
     min-width: 1000px;
 }
 body{
@@ -42,163 +42,90 @@ body{
     color: white;
     position: relative;
 }
-div.honeycomb{
+div.logo img{
+    width: 16vw;
     position: absolute;
-    top: 4vh;
-    left: 14vw;
-    width: 25vw;
-    height: 8vh;
-    background-color: var(--cor6);
-    
+    top: 15vw;
+    left: 5vw;
 }
-div.honeycomb h1{
-    color: var(--cor4);
-    text-align: center;
-    font-size: 3.5vw;
-    font-family: var(--fonte-honey);
-    text-shadow: 2px 2px 0px var(--cor5);
-    font-weight: bolder;
-}
-article.bloco1{
-    height: 95vh;
-    width: 35vw;
+aside.login{
     position: absolute;
-    left: 10vw;
-    top: 15vh;
-    padding: 30px;
-
-    border-radius: 10px;
-    border: 1px solid purple;
+    top: 15.4vw;
+    left: 23vw;
+    border: 1px solid var(--cor5);
+    padding: 1.4vw;
+    border-radius: 20px;
+    width: 50vw;
 }
-article.bloco1 h1{
-    text-align: center;
-    font-size: 3vw;
-    font-weight: bolder;
-    color: purple;
-    font-family: 'Anton', sans-serif;
-    text-shadow:  1px 1px 0px var(--cor1);
-}
-
-article.bloco1 p{
-    text-align: center;
-    padding-top: 20px;
-    font-size: 1.5vw;
-}
-article.bloco1 label{
-    font-size: 1.5vw;
-    margin-left: 2vw;
-}
-article.planeta{
-    position: absolute;
-    width: 37.5vw;
-    height: -30vh;
-
-    top: 30vh;
-    left: 54vw;
-}
-article.planeta img{
-    width: 37.5vw;
-}
-
-div.bloco2{
-    position: absolute;
-    top: 150px;
-}
-.login{
-    font-size: 1vw;
-    margin: 5vw 2vw 5vw 4vw;
+aside.login input{
+    margin: 1vw;
+    padding: .4vw;
     background-color: transparent;
-    border-top: 0px solid black;
-    border-left: 0px solid black;
-    border-right: 0px solid black;
-    border-bottom:   1px  solid purple;
-    color: purple;
-    width: 13vw;
-}
-#iuser{
-    margin-bottom: 40px;
-}
-.login:hover::placeholder{
-    display: none;
-}
-.login::placeholder{
-    color: purple;
-}
-.submit{
-    font-size: 1vw;
-    margin: 40px 10% 0px 10%;
-    padding: 7px;
-    color: white;
     border-radius: 10px;
-    background-color: purple;
-    border: 1px solid var(--cor1);
-    width: 25%;
+    border: 0px;
+    border-bottom: 1px solid var(--cor5);
 }
-.submit:hover{
-    background-color: var(--cor3);
-    color: var(--cor6);
-    transition-duration: 0.4s;
+label{
+    color: var(--cor3);
+    font-size: 1vw;
+    font-family: var(--fonte-principal);
+    text-shadow: 1px 1px 3px var(--cor5);
 }
 label:hover{
-    color: purple;
     text-decoration: underline;
-    font-weight: normal;
+
 }
-p.cadastro{
-    text-align: center;
+#iuser{
+    color: var(--cor4);
     font-size: 1vw;
 }
-p.cadastro > a{
-    text-decoration: none;
-    color: white;
+#iuser::placeholder{
+    color: var(--cor1);
 }
-p.cadastro > a:hover{
-    color: purple;
-    transition-duration: 0.4s;
-    
+#isenha::placeholder{
+    color: var(--cor1);
 }
-hr{
-    border-color: purple;
-    margin-top: 20px;
-    margin-bottom: 60px;
+#isenha{
+    color: var(--cor4);
+    font-size: 1vw;
 }
-article.video{
-    width: 75vh;
-    height: 65vh;
+input.submit{
+    color: var(--cor4);
+    font-size: 1vw;
+}
+input.submit:hover{
+    background-color: var(--cor4);
+    color: var(--cor6);
+}
+div.separacao{
     position: absolute;
-    left: 50vw;
-    top: 100px;
+    left: 21vw;
+    top: 5px;
+    width: 4vw;
+    height: 14vw;
 }
-article.video video{
-    width: 40vw;
-    border-radius: 10px;
-    box-shadow: 2px 2px 3px black;
+div.separacao img{
+    width: 8vw;
+    height: 14vw;
 }
-article.video p{
-    font-size: bold;
+div.cadastro{
+    position: absolute;
+    top: 2.5vw;
+    left: 30vw;
+}
+div.cadastro p{
+    font-size: 1.5vw;
+    padding: 1.5vw;
+    color: var(--cor4);
     text-align: center;
-    margin-top: 10vh;
+    font-family: var(--fonte-principal);
 }
-article.assinatura-login{
-    width: 10vh;
-    height: 10vh;
-    position: absolute;
-    top: 95%;
-    left: 92vw;
-    transform: translate(-50%, -50%);
-    background-image: url(imagens/assinatura\ site.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+div.cadastro p > a{
+    text-decoration: none;
+    color: var(--cor4);
+    font-family: var(--fonte-principal);
 }
-div#frame{
-    height: 110.9%;
-    width: 90vw;
-    background-color: white;
-    position: absolute;
-    top: 0px;
-    left: 6vw;
-}
-div#frame iframe{
-    height: 100.9%;
-    width: 98vw;
+div.cadastro p > a:hover{
+    font-weight: bold;
+    color: var(--cor2);
 }
