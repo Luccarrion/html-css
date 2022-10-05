@@ -29,12 +29,12 @@
         height: 0px;
     }
 body,html{
-    height: 100%;
-    width: 95vw;
+    height: 100vh;
+    width: 97vw;
     min-width: 1000px;
 }
 body{
-    background-image: url(imagens/fundo-site.png);
+    background-image: url(../imagens/fundo-site.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top left;
@@ -42,37 +42,8 @@ body{
     color: white;
     position: relative;
 }
-div.menu{
-    height: 106vh;
-    width: 6vw;
+img{
+    width: 60vw;
     position: absolute;
-    top: 0%;
-    left: 0%;
-
-    background-color: var(--cor5); 
-    display: block;
-    background-attachment: scroll;
-}
-div.menu img{
-    width: 4.5vw;
-    margin: 2vw 0vw 1.5vw 1vw;
-    padding: 2vw 1vw 2vw 1vw;
-    border-color: transparent;
-}
-div.menu img.icone:hover{
-    border-radius: 15%;
-    border: 1px solid var(--cor6);
-    transition-duration: 0.3s;
-}
-div#frame{
-    height: 101vh;
-    width: 94vw;
-    background-color: white;
-    position: absolute;
-    top: 0px;
-    left: 6vw;
-}
-div#frame iframe{
-    height: 100.9%;
-    width: 96vw;
+    left: 19vw;
 }
