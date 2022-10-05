@@ -129,3 +129,25 @@ div.cadastro p > a:hover{
     font-weight: bold;
     color: var(--cor2);
 }
+div.hex1{
+    width: 8vw;
+    height: 8vw;
+    background-color: white;
+    position: absolute;
+    top: 18vw;
+    left: 75vw;
+}
+div.hex1 img{
+    width: 10vw;
+}
+div.hex2{
+    width: 8vw;
+    height: 8vw;
+    background-color: white;
+    position: absolute;
+    top: 5.5vw;
+    left: 13vw;
+}
+div.hex2 img{
+    width: 10vw;
+}
