@@ -139,6 +139,7 @@ div.hex1{
 }
 div.hex1 img{
     width: 10vw;
+    border: 0px solid transparent;
 }
 div.hex2{
     width: 8vw;
