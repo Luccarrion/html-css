@@ -28,7 +28,7 @@
 
     div#menu > img
 -->
-<body>
+<body onresize="mudouTamanho()">
         <div id="menu">
             <img src="imagens/icone-seta-baixo.png" alt="seta para baixo" id="seta" onclick="clickMenu()">
             <menu id="itens">
@@ -53,6 +53,13 @@
                 itens.style.display = 'block'
             }
     }
+    function mudouTamanho(){
+            if (window.innerWidth >= 768){
+                itens.style.display = 'block'
+            } else {
+                itens.style.display = 'none'
+            }
+        }
     </script>
 </body>
 </html>

@@ -38,11 +38,19 @@ html{
     height: 100%;
     width: 100vw;
 }
+@media screen and (max-width: 767px) {
+    
+body{
+    background-image: url(../imagens/tela-honeycomb-celular.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
 
 body div#menu{
     list-style-type: none;
     width: 75px;
-    background-color: transparent;
+    background-color: var(--cor5);
     box-shadow: 1px 0px 5px var(--cor4);
     border-radius: 10px;
     padding: 5px;
@@ -71,5 +79,6 @@ div#menu li > img{
     padding: 10px;
     border-radius: 18px;
     border: 1px solid #990099;
-    background-color: var(--cor5);
+    background-color: var(--cor3);
+}
 }
