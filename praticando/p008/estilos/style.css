@@ -56,7 +56,7 @@ body div#menu{
     padding: 5px;
     margin:5px;
 }
-div#menu > img{
+div#menu >  img{
     width: 35px;
     display: block;
     margin: auto;
@@ -73,7 +73,7 @@ div#menu > img:active{
     transition: 0.2s;
 }
 
-div#menu li > img{
+menu#itens  img{
     width: 60px;
     margin-left: .4vw;
     padding: 10px;
