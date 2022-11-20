@@ -37,7 +37,7 @@
 
   body{
     background-color: var(--cor6);
-    background-image: url(../imagens/tela-honeycomb-fullsize.png);
+    background-image: url(../imagens/tela-honeycomb-login.png);
     background-repeat: no-repeat;
     background-size: cover;
   }
@@ -53,9 +53,10 @@
         width: 40vw;
         height: 40vh;
         position: absolute;
-        top: 20vh;
-        left: 30vw;
+        top: 50vh;
+        left: 32vw;
         background-color: #0c040cb4;
+        box-shadow: 2px 2px 3px var(--cor1);
     }
 
     section#login input{
@@ -66,6 +67,10 @@
         border: 1px solid transparent;
         border-bottom: 1px solid var(--cor4);
         border-radius: 10px;
+    }
+
+    section#login section#dados input{
+        margin-left: 25%;
     }
 
     section#login ::placeholder{
@@ -103,10 +108,12 @@
         color: var(--cor4);
         margin-top: 75px;
         margin-left: 35%;
+        text-shadow: 1px 1px 2px var(--cor5);
     }
     p.esqueci{
         color: var(--cor4);
         margin-left: 32%;
+        text-shadow: 1px 1px 2px var(--cor5);
     }
     p > a{
         text-decoration: none;
@@ -116,4 +123,83 @@
         color: var(--cor3);
         text-decoration: underline;
     }
+  }
+  @media screen and (max-width:767px) and (min-width:375px) {
+    body{
+        background-image: url(../imagens/tela-honeycomb-login-tablet.png);
+    }
+
+    section#login{
+        position: absolute;
+        top: 40vw;
+        left: 34vw;
+        height: 35vh;
+        border: 1px solid var(--cor5);
+        border-radius: 10px;
+        padding: 30px;
+    }
+
+    section#dados input{
+        padding: 5px;
+        background-color: var(--cor6);
+        border-radius: 10px;
+        margin-top: 5px;
+        border: 1px solid transparent;
+        border-bottom: 1px solid var(--cor4);
+    }
+
+    section#dados input::placeholder{
+        color: var(--cor4);
+    }
+
+    section#envio{
+        margin-left: 2vw;
+        margin-top: 5vh;
+    }
+
+    input#limpar{
+        background-color: var(--cor6);
+        padding: 5px;
+        border-radius: 10px;
+        color: var(--cor4);
+        border: 2px solid var(--cor5);
+        margin-top: 10px;
+      }
+      input#enviar{
+        background-color: var(--cor6);
+        padding: 5px;
+        color: var(--cor4);
+        border-radius: 10px;
+        border: 2px solid var(--cor5);
+      }
+      input#limpar:hover{
+        background-color: var(--cor6);
+        color: var(--cor2);
+        border: 2px solid var(--cor4);
+      }
+      input#enviar:hover{
+        background-color: var(--cor6);
+        color: var(--cor2);
+        border: 2px solid var(--cor4);
+      }
+      p.cadastro{
+        color: var(--cor4);
+        margin-top: 10px;
+        margin-left: 15%;
+        text-shadow: 1px 1px 2px var(--cor5);
+      }
+      p.esqueci{
+        color: var(--cor4);
+        margin-left: 5%;
+        text-shadow: 1px 1px 2px var(--cor5);
+      }
+      p > a{
+        text-decoration: none;
+        color: var(--cor4);
+    }
+    p > a:hover{
+        color: var(--cor3);
+        text-decoration: underline;
+    }
+
   }
