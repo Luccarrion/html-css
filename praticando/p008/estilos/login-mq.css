@@ -70,7 +70,7 @@
     }
 
     section#login section#dados input{
-        margin-left: 25%;
+        margin-left: 80px;
     }
 
     section#login ::placeholder{
@@ -104,6 +104,12 @@
         border-radius: 10px;
         border: 2px solid var(--cor5);
       }
+
+      section#envio input:hover{
+        background-color: var(--cor4);
+        border: 1px solid var(--cor5);
+        color: var(--cor6);
+      }
     p.cadastro{
         color: var(--cor4);
         margin-top: 75px;
@@ -125,14 +131,15 @@
     }
   }
   @media screen and (max-width:767px) and (min-width:375px) {
-    body{
+    main{
         background-image: url(../imagens/tela-honeycomb-login-tablet.png);
+
     }
 
     section#login{
         position: absolute;
         top: 350px;
-        left: 30vw;
+        left: 35vw;
         height: 35vh;
         border: 1px solid var(--cor5);
         border-radius: 10px;
@@ -207,7 +214,7 @@
     section#login{
       border: 1px solid var(--cor5);
       padding: 10px;
-      width: 60vw;
+      width: 65vw;
       position: absolute;
       left: 20vw;
       top: 20vh;
@@ -221,6 +228,7 @@
       padding: 10px;
       margin-top: 50px;
       color: var(--cor4);
+      width: 50vw;
     }
 
     section#dados input::placeholder{
@@ -232,42 +240,37 @@
     }
     
 
-    input#limpar{
-      background-color: var(--cor6);
-      padding: 5px;
-      border-radius: 10px;
-      color: var(--cor4);
-      border: 2px solid var(--cor5);
-      margin-top: 20px;
-      margin-left: 50px;
-    }
-    input#enviar{
-      background-color: var(--cor6);
-      padding: 5px;
-      color: var(--cor4);
-      border-radius: 10px;
-      border: 2px solid var(--cor5);
-    }
+   section#envio input{
+    padding: 5px;
+    width: 25vw;
+    margin-top: 15px;
+    background-color: var(--cor6);
+    color: var(--cor4);
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+   }
     input#limpar:hover{
       background-color: var(--cor6);
       color: var(--cor2);
-      border: 2px solid var(--cor4);
+      border: 1px solid var(--cor4);
     }
     input#enviar:hover{
       background-color: var(--cor6);
       color: var(--cor2);
-      border: 2px solid var(--cor4);
+      border: 1px solid var(--cor4);
     }
     p.cadastro{
       color: var(--cor4);
       margin-top: 20px;
       margin-left: 21%;
       text-shadow: 1px 1px 2px var(--cor5);
+      font-size: 5vw;
     }
     p.esqueci{
       color: var(--cor4);
       margin-left: 12%;
       text-shadow: 1px 1px 2px var(--cor5);
+      font-size: 5vw;
     }
     p > a{
       text-decoration: none;
