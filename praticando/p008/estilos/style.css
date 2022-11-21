@@ -79,6 +79,12 @@ menu#itens  img{
     padding: 10px;
     border-radius: 18px;
     border: 1px solid #990099;
-    background-color: var(--cor3);
+    background-color: var(--cor4);
 }
+menu#itens img:hover{
+    background-color: var(--cor2);
+    transition-duration: 0.3s;
+    transform: translate(1%,-1%);
+}
+
 }

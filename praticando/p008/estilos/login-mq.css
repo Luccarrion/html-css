@@ -131,8 +131,8 @@
 
     section#login{
         position: absolute;
-        top: 40vw;
-        left: 34vw;
+        top: 350px;
+        left: 30vw;
         height: 35vh;
         border: 1px solid var(--cor5);
         border-radius: 10px;
@@ -201,5 +201,81 @@
         color: var(--cor3);
         text-decoration: underline;
     }
+
+  }
+  @media screen and (max-width:374px) {
+    section#login{
+      border: 1px solid var(--cor5);
+      padding: 10px;
+      width: 60vw;
+      position: absolute;
+      left: 20vw;
+      top: 20vh;
+      height: 300px;
+    }
+
+    section#dados input{
+      background-color: var(--cor6);
+      border: 1px solid var(--cor4);
+      border-radius: 20px;
+      padding: 10px;
+      margin-top: 50px;
+      color: var(--cor4);
+    }
+
+    section#dados input::placeholder{
+      color: var(--cor4);
+    }
+    section#dados input:active{
+      border: 1px solid var(--cor2);
+      background-color: var(--cor1);
+    }
+    
+
+    input#limpar{
+      background-color: var(--cor6);
+      padding: 5px;
+      border-radius: 10px;
+      color: var(--cor4);
+      border: 2px solid var(--cor5);
+      margin-top: 20px;
+      margin-left: 50px;
+    }
+    input#enviar{
+      background-color: var(--cor6);
+      padding: 5px;
+      color: var(--cor4);
+      border-radius: 10px;
+      border: 2px solid var(--cor5);
+    }
+    input#limpar:hover{
+      background-color: var(--cor6);
+      color: var(--cor2);
+      border: 2px solid var(--cor4);
+    }
+    input#enviar:hover{
+      background-color: var(--cor6);
+      color: var(--cor2);
+      border: 2px solid var(--cor4);
+    }
+    p.cadastro{
+      color: var(--cor4);
+      margin-top: 20px;
+      margin-left: 21%;
+      text-shadow: 1px 1px 2px var(--cor5);
+    }
+    p.esqueci{
+      color: var(--cor4);
+      margin-left: 12%;
+      text-shadow: 1px 1px 2px var(--cor5);
+    }
+    p > a{
+      text-decoration: none;
+      color: var(--cor4);
+  }
+  p > a:hover{
+      color: var(--cor3);
+      text-decoration: underline;
+  }
 
   }
