@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../imagens/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../estilos/cadastro-mq.css">
+    <title>cadastro</title>
+</head>
+<body>
+    <main> 
+        <section>
+            <h1>Cadastre-se</h1>
+            <h2>É rápido e fácil</h2>
+            <form action="../cadastro.php">
+                <article id="dados-principais">
+                    <input type="text" name="nome" id="nome" placeholder="Primeiro Nome" required>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Sobrenome" required>
+                    <input type="email" name="e-mail" id="e-mail" placeholder="E-mail" required>
+                    <input type="password" name="senha" id="senha" placeholder="Criar senha" required>
+                </article>
+                <article id="dados-temporais">
+                    <p>Data de nascimento</p>
+                    <input type="number" size="2" name="dia" id="dia" required placeholder="Dia">
+                    <input type="month" name="mes" id="mes" required>
+                </article>
+                <article id="sexo">
+                    <p>Gênero</p>
+                    <label for="ifem"><input type="radio" name="sexo" id="ifem">Feminino</label>
+                    <label for="imasc"><input type="radio" name="sexo" id="imasc">Masculino</input></label>
+                    <label for="inao"><input type="radio" name="sexo" id="inao">Outro</input></label>
+                </article>
+                <article id="envio">
+                    <input type="submit" id="ienvio" name="envio" value="Concluir">
+                    <input type="reset" id="ilimpa" name="limpar" value="Limpar">
+                </article>
+            </form>
+            <p><a href="./login.html">Voltar para a página de login</a></p>
+        </section>
+    </main>
+</body>
+</html>
