@@ -32,7 +32,7 @@
         background-color: black;
         height: 100%;
         width: 100%;
-        background-image: url(../imagens/tela-honeycomb-mediumsize.png);
+        background-color: var(--cor6);
         background-position: center center;
         background-repeat: no-repeat;
         background-size: cover;

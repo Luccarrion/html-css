@@ -41,7 +41,7 @@ html{
 @media screen and (max-width: 767px) {
     
 body{
-    background-image: url(../imagens/tela-honeycomb-celular.png);
+    background-color: var(--cor6);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
