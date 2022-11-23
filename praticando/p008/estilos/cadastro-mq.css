@@ -43,14 +43,14 @@
 
   main{
     margin: auto;
-    width: 60vw;
+    width: 70vw;
     height: 75vh;
     padding-top: 50px;
     
   }
   section{
     height: fit-content;
-    width: 65vw;
+    width: 70vw;
     padding: 10px;
     border: 1px solid var(--cor5);
     border-radius: 10px;
@@ -60,7 +60,7 @@
     body{
         background-image: url(../imagens/tela-honeycomb-login-tablet.png);
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: contain;
         
     }
     main h1{
@@ -111,7 +111,7 @@
         font-size: 2vw;
     }
     article#sexo p{
-        padding: 10px;
+        padding: 5px;
         font-size: 3.5vw;
         text-shadow: 2px 2px 2px var(--cor1);
         font-weight: bolder;
@@ -126,7 +126,7 @@
     article#sexo label{
         color: var(--cor4);
         font-size: 2.5vw;
-        padding: 2vw;
+        padding: 1vw;
         margin-left: 5px;
     }
     article#envio{
