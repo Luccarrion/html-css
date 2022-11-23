@@ -45,7 +45,8 @@
     margin: auto;
     width: 70vw;
     height: 75vh;
-    padding-top: 50px;
+    padding-top: 20px;
+
     
   }
   section{
@@ -54,7 +55,12 @@
     padding: 10px;
     border: 1px solid var(--cor5);
     border-radius: 10px;
+    margin-bottom: 20px;
     box-shadow: 2px 2px 5px var(--cor5);
+  }
+  ::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
   }
   @media screen and (max-width:767px) {
     body{
@@ -80,6 +86,7 @@
     article#dados-principais input{
         margin: 2vw;
         padding: 1vw;
+        font-size: 2vw;
         width: 25vw;
         background-color: var(--cor6);
         border: 1px solid var(--cor5);
@@ -159,6 +166,95 @@
     section a{
         text-decoration: none;
         color: var(--cor4);
+    }
+
+    @media screen and (min-width:765px) {
+        section h1{
+            color: var(--cor4);
+            text-overflow: 2px 2px 2px var(--cor6);
+            font-size: 4vw;
+        }
+        section h2{
+            color: var(--cor5);
+            font-size: 2vw;
+            text-shadow: 2px 2px 2px var(--cor6);
+        }
+            article#dados-principais input{
+                margin: 2vw;
+                display: block;
+                font-size: 2vw;
+                padding: 1vw;
+                width: 25vw;
+                background-color: var(--cor6);
+                border: 1px solid var(--cor5);
+                border-radius: 10px;
+                color: var(--cor2);
+                
+            }
+            article#dados-principais input::placeholder{
+                color: var(--cor2);
+                font-size: 2vw;
+            }
+            article#dados-temporais p{
+                color: var(--cor4);
+                font-size: 3.5vw;
+            }
+            article#dados-temporais input{
+                margin: 2vw;
+                display: block;
+                font-size: 2vw;
+                padding: 1vw;
+                width: 25vw;
+                background-color: var(--cor6);
+                border: 1px solid var(--cor5);
+                border-radius: 10px;
+                color: var(--cor2);   
+            }
+            article#dados-temporais input::placeholder{
+                color: var(--cor2);
+                font-size: 2vw;
+            }
+            article#sexo p{
+                margin: 2vw;
+                color: var(--cor4);
+            }
+            article#sexo label{
+                margin: 2vw;
+                margin-left: 3vw;
+                font-size: 2vw;
+                padding: 1vw;
+                width: 25vw;
+                background-color: var(--cor6);
+                border: 1px solid var(--cor5);
+                border-radius: 10px;
+                color: var(--cor2);  
+            }
+            article#sexo label:hover{
+                color: var(--cor4);
+                border-color: var(--cor4);
+            }
+            article#envio{
+                margin-left: 22%;
+                padding: 10px;
+            }
+            article#envio input{
+                margin: 2vw;
+                padding: 1vw;
+                font-size: 2vw;
+                width: 25vw; 
+                background-color: var(--cor6);
+                border: 1px solid var(--cor5);
+                border-radius: 10px;
+                color: var(--cor2);  
+            }
+            article#envio input:hover{
+                border-color: var(--cor3);
+                color: var(--cor3);
+            }
+            article#envio input:active{
+                border-color: var(--cor2);
+                color: var(--cor2);
+            }  
     }
 
 
