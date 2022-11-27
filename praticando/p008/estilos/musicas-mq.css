@@ -1,0 +1,97 @@
+@charset "UTF-8";
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }
+  
+  /* 
+      Mobile: 360 x 640
+      Mobile: 375 x 667
+      Mobile: 360 x 720
+      iPhone X: 375 x 812
+      Pixel 2: 411 x 731
+      Tablet: 768 x 1024
+      Laptop: 1366 x 768
+      High-res laptop or desktop: 1920 x 1080
+  */
+  
+  *{
+      margin: 0px;
+      padding: 0px;
+      box-sizing: border-box;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  :root{
+      --cor1: rgb(53, 0, 53);
+  
+      --cor2: #D540D5;
+      --cor3: #cc00cc;
+      --cor4: #990099;
+      --cor5: #4D004D;
+      --cor6: #0c040c;
+  }
+  html{
+      height: 100%;
+      width: 100vw;
+  }
+  ::-webkit-scrollbar{
+    height: 0px;
+    width: 0px;
+  }
+  body{
+    background-color: var(--cor6);
+  }
+  main{
+    margin: auto;
+    width: 80vw;
+  }
+  section article{
+    border: 1px solid var(--cor5);
+    margin: 10px;
+    border-radius: 10px;
+  }
+  section article h1{
+    font-size: 5vw;
+    padding: 10px;
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    margin: 2vw;
+    border-radius: 25px;
+    color: var(--cor4);
+  }
+  section article ol{
+    list-style-position: inside;
+    color: var(--cor3);
+    font-size: 2.5vw;
+    margin: 10px;
+  }
+  section article li{
+    margin-top: 40px;
+  }
+  section article li:hover{
+    color: var(--cor4);
+  }
+  section article li:hover audio{
+    display: block;
+  }
+  section article ol audio{
+    height: 4.5vw;
+    width: 85%;
+    margin-left: 15px;
+    margin: 10px;
+    display: none;
+  }
+  @media screen and (min-width:767px) {
+    main{
+        width: 50vw;
+    }
+    section article h1{
+        font-size: 3vw;
+    }
+    section article li{
+        font-size: 1.5vw;
+    }
+  }
