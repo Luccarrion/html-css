@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <title>Basketball Game</title>
+    <style>
+        /* CSS styling for game elements */
+        #court {
+            position: relative;
+            width: 600px;
+            height: 400px;
+            margin: 0 auto;
+            border: 1px solid black;
+            overflow: hidden;
+            background-image: url(./img/basquete_png_backgran.png);
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            
+        }
+
+        #ball {
+            position: absolute;
+            top: 0;
+            left: 290px;
+            width: 30px;
+            height: 30px;
+            background-image: url(../p013/img/bola);
+            background-position: center center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            border-radius: 50%;
+        }
+
+        #player {
+            position: absolute;
+            top: 360px;
+            left: 260px;
+            width: 80px;
+            height: 40px;
+            background-image: url(../p013/img/aro);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+        }
+
+        #score, #level, #timer {
+            text-align: center;
+            margin-bottom: 10px;
+            font-family: 'Bangers', cursive;
+        }
+        /* ... */
+        body{
+            background-image: url(./img/aaaaaaaaaaaaaaaaaaa.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+    <div id="court">
+        <div id="ball"></div>
+        <div id="player"></div>
+        <div id="score">Score: 0</div>
+        <div id="level">Level: 1</div>
+        <div id="timer">Time: 60</div>
+        <!-- Add additional game elements if needed -->
+        <!-- ... -->
+    </div>
+
+    <script>
+        // JavaScript code
+        // Game variables
+        let ball = document.getElementById("ball");
+        let player = document.getElementById("player");
+        let court = document.getElementById("court");
+        let scoreDisplay = document.getElementById("score");
+        let levelDisplay = document.getElementById("level");
+        let timerDisplay = document.getElementById("timer");
+
+        // Player variables
+        let playerPosition = 260;
+        let playerSpeed = 15;
+
+        // Ball variables
+        let ballPositionX = 290;
+        let ballPositionY = 0;
+        let ballSpeed = 5;
+
+        // Score and Level variables
+        let score = 0;
+        let level = 1;
+        let levelSpeedIncrease = 1;
+        let maxLevel = 5;
+
+        // Timer variables
+        let timeLimit = 60;
+        let timerInterval;
+        let timeLeft = timeLimit;
+
+        // Event listeners
+        document.addEventListener("keydown", function(event) {
+            if (event.keyCode === 37 && playerPosition > 0) {
+                playerPosition -= playerSpeed; // Move left
+            }
+            else if (event.keyCode === 39 && playerPosition < 520) {
+                playerPosition += playerSpeed; // Move right
+            }
+            player.style.left = playerPosition + "px";
+        });
+
+        // Game loop
+        setInterval(function() {
+            // Move the ball
+            ballPositionY += ballSpeed;
+            ball.style.top = ballPositionY + "px";
+            ball.style.left = ballPositionX + "px";
+
+            // Check collision with player
+            if (ballPositionY > 360 && ballPositionY < 380 && ballPositionX >= playerPosition && ballPositionX <= (playerPosition + 80)) {
+                handleCatch();
+            }
+
+            // Check if ball reaches the bottom
+            if (ballPositionY > 380) {
+                handleMiss();
+            }
+
+            // Update score and level display
+            updateScoreAndLevel();
+
+            // Update timer display
+            updateTimerDisplay();
+
+        }, 50);
+
+        // Function to handle successful catch
+        function handleCatch() {
+            score++;
+            ballSpeed += levelSpeedIncrease;
+            ballPositionY = 0;
+            ballPositionX = Math.floor(Math.random() * 600);
+        }
+
+        // Function to handle missed ball
+        function handleMiss() {
+            // Reset ball position
+            ballPositionY = 0;
+            ballPositionX = Math.floor(Math.random() * 600);
+
+            // Deduct score for missed ball
+            if (score > 0) {
+                score--;
+            }
+        }
+
+        // Function to update score and level display
+        function updateScoreAndLevel() {
+            scoreDisplay.textContent = "Cestas: " + score;
+            levelDisplay.textContent =  "Nível: " + level;
+        }
+
+        // Function to update timer display
+        function updateTimerDisplay() {
+            timerDisplay.textContent = "Tempo: " + timeLeft;
+        }
+
+        // Function to end the game
+        function endGame() {
+            // Stop the game loop
+            clearInterval(timerInterval);
+
+            // Display game over message
+            alert("Game Over! Final Score: " + score);
+        }
+
+        // Start the timer countdown
+        timerInterval = setInterval(function() {
+            timeLeft--;
+
+            if (timeLeft <= 0) {
+                endGame();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>

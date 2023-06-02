@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de drones</title>
+</head>
+<body>
+    <main>
+        <form action="cad.php" autocomplete="off" method="get">
+
+            <fieldset>
+                <legend>Dados cadastrais</legend>
+                <p>
+                    <label for="id_drone">ID Drone:</label>
+                    <input type="text" name="id_drone" id="id_drone" required>
+                </p>
+                <p>
+                    <label for="model_drone">Modelo do Drone:</label>
+                    <input type="text" name="model_drone" id="model_drone">
+                </p>
+                <p>
+                    <label for="serie_drone">N° série Drone:</label>
+                    <input type="number" name="serie_drone" id="serie_drone">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Alvarás documentais</legend>
+                <p>
+                    <label for="licenca_voo">Liberação para voar</label>
+                    <input type="file" name="licenca_voo" id="licenca_voo">
+                </p>
+                <p>
+                    <label for="num_licenca">N° licença alvará</label>
+                    <input type="number" name="num_licenca" id="num_licenca">
+                </p>
+                <p>
+                    <label for="data_emissao">Data de emissão do alvará</label>
+                    <input type="date" name="data_emissao" id="data_emissao">
+                </p>
+                <p>
+                    <label for="val_licenca">Data validade da licença</label>
+                    <input type="date" name="val_licenca" id="val_licenca">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Controle Drone - Histórico</legend>
+                <p>
+                    <label for="data_voo">Data do Voo</label>
+                    <input type="date" name="data_voo" id="data_voo">
+                </p>
+                <p>
+                    <label for="hora_voo">Horário do voo</label>
+                    <input type="time" name="hora_voo" id="hora_voo">
+                </p>
+                <p>
+                    <label for="tempo_voo">Tempo de voo</label>
+                    <input type="time" name="tempo_voo" id="tempo_voo">
+                </p>
+                <div class="coord">
+                    <p>
+                        <label for="coord_in">Coordenada de inicio</label>
+                        <input type="number" name="coord_in" id="coord_in">
+                    </p>
+                    <p>
+                        <label for="coord_fim">Coordenada Final</label>
+                        <input type="number" name="coord_fim" id="coord_fim">
+                    </p>
+                </div>
+                <p>
+                    <label for="altitude">Altitude</label>
+                    <input type="number" name="altitude" id="altitude">
+                </p>
+                <p>
+                    <label for="vel_media">Velocidade média</label>
+                    <input type="number" name="vel_media" id="vel_media">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Tempo voo</legend>
+                <p>
+                    <label for="hora_voo">Hora do voo</label>
+                    <input type="time" name="hora_voo" id="hora_voo">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados da bateria</legend>
+                <p>
+                    <label for="carg_carga">Capacidade da carga</label>
+                    <input type="number" name="carg_carga" id="carg_carga">
+                </p>
+                <p>
+                    <label for="capac_bateria">Capacidade de baterias</label>
+                    <input type="number" name="capac_bateria" id="capac_bateria">
+                </p>
+            </fieldset>
+            <input type="submit" name="enivar" id="enviar">
+            <input type="reset" name="limpar" id="limpar">
+    </main>
+</body>
+</html>
