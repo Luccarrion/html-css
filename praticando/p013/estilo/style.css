@@ -78,6 +78,9 @@ header{
 main{
     width: 1100px;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 ul{
@@ -129,11 +132,39 @@ li{
 .button img{
     width: 400px;
     border-radius: 80px;
-    margin-left: 300px;
 }
 
 .button img:hover{
     transform: translate(8px, -8px);
     transition-duration: 0.3s;
 
+}
+
+/* Rodapé */
+
+footer{
+    margin-top: 100px;
+    height: 200px;
+    background-color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  
+}
+
+footer img{
+    width: 100px;
+    border: 1px solid var(--cor2);
+    border-radius: 1000px;
+    padding: 20px;
+}
+
+footer p{
+    color: white;
+    font-size: 10px;
+}
+
+.contatos{
+    display: flex;
 }
