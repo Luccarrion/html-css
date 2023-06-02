@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
     <title>Basketball Game</title>
     <style>
-        /* CSS styling for game elements */
+        /* CSS estilização */
         #court {
             position: relative;
             width: 1920px;
@@ -25,8 +25,8 @@
             position: absolute;
             top: 0;
             left: 290px;
-            width: 30px;
-            height: 30px;
+            width: 50px;
+            height: 50px;
             background-image: url(../p013/img/bola);
             background-position: center center;
             background-size: contain;
@@ -36,10 +36,10 @@
 
         #player {
             position: absolute;
-            top: 360px;
+            top: 1000px;
             left: 260px;
-            width: 80px;
-            height: 40px;
+            width: 140px;
+            height: 70px;
             background-image: url(../p013/img/aro);
             background-repeat: no-repeat;
             background-position: center center;
@@ -48,8 +48,10 @@
 
         #score, #level, #timer {
             text-align: center;
-            margin-bottom: 10px;
+            margin-top: 10px;
             font-family: 'Bangers', cursive;
+            font-size: 2rem;
+            color: red;
         }
         /* ... */
         body{
@@ -66,13 +68,11 @@
         <div id="score">Score: 0</div>
         <div id="level">Level: 1</div>
         <div id="timer">Time: 60</div>
-        <!-- Add additional game elements if needed -->
-        <!-- ... -->
     </div>
 
     <script>
-        // JavaScript code
-        // Game variables
+        // JavaScript 
+        // Variáveis do jogo
         let ball = document.getElementById("ball");
         let player = document.getElementById("player");
         let court = document.getElementById("court");
@@ -80,103 +80,103 @@
         let levelDisplay = document.getElementById("level");
         let timerDisplay = document.getElementById("timer");
 
-        // Player variables
+        // Variáveis do jogador
         let playerPosition = 260;
-        let playerSpeed = 15;
+        let playerSpeed = 30;
 
-        // Ball variables
+        // Variáveis da bola
         let ballPositionX = 290;
         let ballPositionY = 0;
-        let ballSpeed = 5;
+        let ballSpeed = 30;
 
-        // Score and Level variables
+        // Variações de nível e score
         let score = 0;
         let level = 1;
         let levelSpeedIncrease = 1;
         let maxLevel = 5;
 
-        // Timer variables
+        // Tempo 
         let timeLimit = 60;
         let timerInterval;
         let timeLeft = timeLimit;
 
-        // Event listeners
+        // Movimentação player
         document.addEventListener("keydown", function(event) {
             if (event.keyCode === 37 && playerPosition > 0) {
                 playerPosition -= playerSpeed; // Move left
             }
-            else if (event.keyCode === 39 && playerPosition < 520) {
+            else if (event.keyCode === 39 && playerPosition < 1920) {
                 playerPosition += playerSpeed; // Move right
             }
             player.style.left = playerPosition + "px";
         });
 
-        // Game loop
+        // Looping
         setInterval(function() {
-            // Move the ball
+            // Movimentação da bola
             ballPositionY += ballSpeed;
             ball.style.top = ballPositionY + "px";
             ball.style.left = ballPositionX + "px";
 
-            // Check collision with player
-            if (ballPositionY > 360 && ballPositionY < 380 && ballPositionX >= playerPosition && ballPositionX <= (playerPosition + 80)) {
+            // Checar a colisão
+            if (ballPositionY > 1000 && ballPositionY < 1080 && ballPositionX >= playerPosition && ballPositionX <= (playerPosition + 140)) {
                 handleCatch();
             }
 
-            // Check if ball reaches the bottom
-            if (ballPositionY > 380) {
+            // Chcagem de colisão com chão
+            if (ballPositionY > 1000) {
                 handleMiss();
             }
 
-            // Update score and level display
+            // Mudar nível e socre
             updateScoreAndLevel();
 
-            // Update timer display
+            // Mudar cronômetro
             updateTimerDisplay();
 
         }, 50);
 
-        // Function to handle successful catch
+        // Função de acerto da bola
         function handleCatch() {
             score++;
             ballSpeed += levelSpeedIncrease;
             ballPositionY = 0;
-            ballPositionX = Math.floor(Math.random() * 600);
+            ballPositionX = Math.floor(Math.random() * 1980);
         }
 
-        // Function to handle missed ball
+        // Função errar bola
         function handleMiss() {
-            // Reset ball position
+            // Resetar posição da bola
             ballPositionY = 0;
-            ballPositionX = Math.floor(Math.random() * 600);
+            ballPositionX = Math.floor(Math.random() * 1980);
 
-            // Deduct score for missed ball
+            // Subtração do score
             if (score > 0) {
                 score--;
             }
         }
 
-        // Function to update score and level display
+        // Função para atualizar o score e o nível
         function updateScoreAndLevel() {
             scoreDisplay.textContent = "Cestas: " + score;
             levelDisplay.textContent =  "Nível: " + level;
         }
 
-        // Function to update timer display
+        // Função para atualizar o timer
         function updateTimerDisplay() {
             timerDisplay.textContent = "Tempo: " + timeLeft;
         }
 
-        // Function to end the game
+        // Função para acabar com o jogo
         function endGame() {
-            // Stop the game loop
+            // Parar o loop
             clearInterval(timerInterval);
 
-            // Display game over message
+            // Mesagem de alerta
             alert("Fim de jogo! Pontuação final: " + score);
         }
 
-        // Start the timer countdown
+        // Começar contagem regressiva
         timerInterval = setInterval(function() {
             timeLeft--;
 
