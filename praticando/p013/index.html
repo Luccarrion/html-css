@@ -9,12 +9,12 @@
         /* CSS styling for game elements */
         #court {
             position: relative;
-            width: 600px;
-            height: 400px;
+            width: 1920px;
+            height: 1080px;
             margin: 0 auto;
             border: 1px solid black;
             overflow: hidden;
-            background-image: url(./img/basquete_png_backgran.png);
+            background-image: url(./img/bask_court);
             background-position: center center;
             background-size: contain;
             background-repeat: no-repeat;
@@ -173,7 +173,7 @@
             clearInterval(timerInterval);
 
             // Display game over message
-            alert("Game Over! Final Score: " + score);
+            alert("Fim de jogo! Pontuação final: " + score);
         }
 
         // Start the timer countdown
