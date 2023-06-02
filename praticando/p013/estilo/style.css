@@ -154,10 +154,11 @@ footer{
 }
 
 footer img{
-    width: 100px;
+    width: 70px;
     border: 1px solid var(--cor2);
     border-radius: 1000px;
-    padding: 20px;
+    margin-right: 10px;
+    padding: 10px;
 }
 
 footer p{
@@ -167,4 +168,11 @@ footer p{
 
 .contatos{
     display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+}
+
+.social{
+    display: flex;
+    align-items: center;
 }
