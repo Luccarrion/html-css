@@ -133,6 +133,16 @@ li{
     box-shadow: 2px 2px 20px var(--corx);
 }
 
+#img1:hover{
+    transform: translate(2px, -2px);
+    transition-duration: .3s;
+}
+
+#img2:hover{
+    transform: translate(-2px, -2px);
+    transition-duration: .3s;
+}
+
 #txt{
     margin: 10px;
     width: 450px;
