@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste 2</title>
+</head>
+<body>
+    <button id="meuBotao">Clique Aqui</button>
+
+    <script>
+
+        document.getElementById('meuBotao').addEventListener('click', (event) => {
+            console.log(event.type) // Printará no console o tipo de evento 'gatilho' -> nesse caso é o clique no botão
+            console.log(event.target) // Printará no console o alvo / elemento / objeto do evento -> nesse caso é o elemento botão
+            alert('Botão Apertado') // Printará em uma Janela Pop-up no navegador a mensagem declarada -> "Botão Apertado"
+            event.preventDefault() // Impede que o navegador tenha o comportamento padrão -> para evitar que o envio do formulário faça a página ser recarregada
+        })
+
+    </script>
+</body>
+</html>

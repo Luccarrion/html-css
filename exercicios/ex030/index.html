@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="sheet.css">
+    <title>...</title>
+</head>
+<body>
+    <form>
+        <input id="input-item" class="input-item" type="text" placeholder="Digite a tarefa que deseja adicionar"></input>
+        <button class="button-item" id="button-item" type="button">Salvar tarefa</button>
+        <ul id="lista-tarefas">
+            <li id="tarefa">
+                <div class="tarefa-item">
+                    <input type="checkbox" id="checkbox-1">
+                    <p id="tarefa-texto"></p>
+                </div>
+            </li>
+        </ul>
+    </form>
+
+    <script>
+
+        const inputItem = document.getElementById('input-item')
+        const botao = document.getElementById('button-item')
+        let contador = 0
+        const listaTarefas = document.getElementById('lista-tarefas')
+
+        botao.addEventListener('click', (evento) => {
+            evento.preventDefault()
+            if (inputItem === ''){
+                alert('Insira um item')
+                return
+            }
+
+            const itemDaLista = document.createElement('li')
+            const conteinerLista = document.createElement('div')
+            conteinerLista.classList.add('lista-item-conteiner')
+            const inputCheckbox = document.createElement('input')
+            inputCheckbox.type = 'checkbox'
+            inputCheckbox.id = "checkbox-" + contador++
+            const inputText = document.createElement('p')
+            inputText.innerText = inputItem.value
+            conteinerLista.appendChild(inputCheckbox)
+            conteinerLista.appendChild(inputText)
+            itemDaLista.appendChild(conteinerLista)
+            listaTarefas.appendChild(itemDaLista)
+
+        })
+
+    </script>
+</body>
+</html>

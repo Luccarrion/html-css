@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button id="botaoPrincipal">Me aperte (la ele)</button>
+
+    <script>
+        document.getElementById('botaoPrincipal').addEventListener('click', (func) => {
+            alert('O botão foi pressionado')
+            func.preventDefault()
+            console.log(func.type)
+            console.log(func.target)
+        })
+    </script>
+</body>
+</html>
